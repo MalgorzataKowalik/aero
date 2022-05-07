@@ -1,9 +1,12 @@
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
 module.exports = {
   entry: "./src/index.js",
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "bundle.js"
+    filename: "bundle.js",
+    clean: true,
+    assetModuleFilename: 'images/[name][ext][query]'
   },
   devtool: "source-map",
   devServer:{
@@ -12,6 +15,11 @@ module.exports = {
     },
     port: 9000
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+    template: "./src/index.html"
+    })
+  ],
   module: {
     rules: [{
       test: /\.css$/,

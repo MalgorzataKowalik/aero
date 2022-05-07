@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+/>
+<link
+  href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+  rel="stylesheet"
+/>
+</head>
+<body>
+  <div class="background-image"></div>
+  <nav>
+    <div class="logo">
+      <picture>
+        <source srcset="./images/logo_long.png" media="(min-width: 600px)"/>
+        <img src="./images/logo.png" alt="logo">
+      </picture>
+      <div class="logo-text">
+        <h1>Aero</h1>
+        <h1>Airlanes</h1>
+      </div>
+    </div>
+    <button class="btn login hover-pointer">Login</button>
+  </nav>
+  <main class="main-container">
+    <section class="wrapper search-pannel">
+      <div class="search pannel-field origin">
+        <p class="origin field-title">From</p>
+        <p class="origin data">Wrocław</p>
+      </div>
+      <div class="search pannel-field destination">
+        <p class="destination field-title">To</p>
+        <p class="destination data">Warsaw</p>
+      </div>
+      <div class="search pannel-field date">
+        <p class="date field-title">Date</p>
+        <p class="date data">dd/mm/yyyy</p>
+      </div>
+      <div class="search pannel-field passengers">
+        <p class="passengers field-title">Passengers</p>
+        <p class="passengers data">1 Adult, 2 Children</p>
+      </div>
+      <button class="btn accept">Accept</button>
+    </section>
+    <section class="wrapper options-pannel">
+      <div class="btn close hover-pointer">
+        <img class="close-img" src="./images/close.png"/>
+      </div>
+      <div class="options pannel-field origin">
+        <p class="options field-title origin">Available origins:</p>
+        <p class="option data wroclaw origin">Wrocław</p>
+      </div>
+      <div class="options pannel-field destination">
+        <p class="options field-title destination">Available destinations:</p>
+        <p class="option data warsaw destination">Warsaw</p>
+        <p class="option data paris destination">Paris</p>
+        <p class="option data new-york destination">New York</p>
+      </div>
+      <div class="options date calendar">
+          <div class="month">
+            <i class="fas fa-angle-left prev"></i>
+            <!-- <div class="date"> -->
+              <h1></h1>
+              <!-- <p></p> -->
+            <!-- </div> -->
+            <i class="fas fa-angle-right next"></i>
+          </div>
+          <div class="weekdays"> 
+            <div>Mon</div>
+            <div>Tue</div>
+            <div>Wed</div>
+            <div>Thu</div>
+            <div>Fri</div>
+            <div>Sat</div>
+            <div>Sun</div>
+          </div>
+          <div class="days"></div>
+      </div>
+      <div class="options pannel-field passengers">
+        <p class="options field-title passengers">Passengers:</p>
+        <div class="passengers-container">
+          <p class="passanger-type-title">Adults  <span class="passanger-type-info">(14+)</span></p>
+          <div class="passanger-sign"><i class="fas fa-plus hover-pointer"></i></div>
+          <p class="passanger-amount">1</p>
+          <div class="passanger-sign"><i class="fas fa-minus hover-pointer"></i></div>
+          <p class="passanger-type">Children  <span class="passanger-type-info">(2-14)</span></p>
+          <div class="passanger-sign"><i class="fas fa-plus hover-pointer"></i></div>
+          <p class="passanger-amount">0</p>
+          <div class="passanger-sign"><i class="fas fa-minus hover-pointer"></i></div>
+          <p class="passanger-type">Infants  <span class="passanger-type-info">(0-2)</span></p>
+          <div class="passanger-sign"><i class="fas fa-plus hover-pointer"></i></div>
+          <p class="passanger-amount">0</p>
+          <div class="passanger-sign"><i class="fas fa-minus hover-pointer"></i></div>
+        </div>
+        
+      </div>
+    </section>
+    <section class="wrapper weather-pannel">
+    </section>
+    <section class="wrapper login-pannel">
+    </section>
+  </main>
+</body>
+</html>

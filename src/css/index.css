@@ -68,21 +68,22 @@ nav {
   font-size: 1.8rem;
 }
 
-.btn:hover {
+.hover-pointer:hover {
   cursor: pointer;
 }
 
 .main-container {
   width: 88vw;
   position: fixed;
-  top: 120px;
+  top: 100px;
   left: 6vw;
 }
 
 .wrapper {
   background-color: rgba(255, 255, 255, 0.4);
   width: 100%;
-  padding: 3vh 6vw;
+  height: 366px;
+  padding: 18px 20px;
   border-radius: 20px;
   position: absolute;
   top: 0;
@@ -99,10 +100,11 @@ nav {
   background-color: #fff;
   border-radius: 20px;
   padding: 5px 4vw;
+  width: 100%;
 }
 
 .accept {
-  margin: 2vh auto 0;
+  margin: 14px auto 0;
 }
 
 .pannel-field>.field-title {
@@ -117,6 +119,8 @@ nav {
 
 .options-pannel {
   display: none;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .options.pannel-field {
@@ -132,10 +136,6 @@ nav {
   right: -10px;
 }
 
-.close:hover {
-  cursor: pointer;
-}
-
 .close-img {
   width: 14px;
   height: 14px;
@@ -145,20 +145,144 @@ nav {
   transform: translate(-50%, -50%);
 }
 
-.option:hover {
+.option.origin:hover, .option.destination:hover {
   cursor: pointer;
   font-weight: 600;
 }
 
+/* calendar start*/
+
+.calendar {
+  padding: 0;
+  background-color: #fff;
+  border-radius: 20px;
+  width: 100%;
+  display: none;
+}
+
+.month {
+  width: 100%;
+  height: 4rem;
+  background-color: #01395e;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  text-align: center;
+  border-radius: 20px 20px 0 0;
+}
+
+.month i {
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.month h1 {
+  /* height: 100%; */
+  line-height: 4rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  /* margin-bottom: 1rem; */
+}
+
+/* .month p {
+  font-size: 1.5rem;
+} */
+
+.weekdays {
+  width: 100%;
+  height: 4rem;
+  padding: 0 0.4rem;
+  display: flex;
+  align-items: center;
+}
+
+.weekdays div {
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  width: calc((86vw - 42px) / 7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.days {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0.2rem;
+}
+
+.days div {
+  font-size: 1.3rem;
+  margin: calc(1vw / 14);
+  width: calc((86vw - 54px) / 7);
+  height: calc((366px - 36px - 10px - 8rem) / 6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.2s;
+}
+
+.days div:hover:not(.today) {
+  background-color: #262626;
+  border: 0.2rem solid #777;
+  cursor: pointer;
+}
+
+.prev-date,
+.next-date {
+  opacity: 0.5;
+}
+
+.today {
+  background-color: #167e56;
+}
+/* calendar end*/
+
+.passengers-container {
+  margin: 15px 0;
+  display: grid;
+  grid-template-columns: 1fr repeat(3, 15%);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 10px;
+  font-size: 1.8rem
+}
+
+.passengers-container>* {
+  align-self: center
+}
+
+.passanger-type-info {
+  font-size: 1.2rem;
+  color: #777
+}
+
+.passanger-amount, .passanger-sign {
+  margin: 0 auto
+}
+
 .weather-pannel {
   height: 300px;
-  /* display: none; */
+  display: none;
 }
 
 .login-pannel {
   height: 300px;
   background-color: #01395e;
-  /* display: none; */
+  display: none;
+}
+
+@media only screen and (max-width: 1400px) and (min-width: 800px) {
+  html {
+    font-size: 8px;
+  }
 }
 
 @media only screen and (min-width: 800px) {
@@ -187,13 +311,28 @@ nav {
 
   .wrapper {
     width: 20vw;
-    padding: 3vh 2vw;
+    padding: 18px 2vw;
     border-radius: 25px;
   }
   
   .pannel-field {
     border-radius: 25px;
     padding: 5px 2vw;
+  }
+
+  .calendar {
+    padding: 0;
+    border-radius: 25px;
+  }
+
+  .weekdays div {
+    width: calc((20vw - 4vw - 2px) / 7);
+  }
+
+  .days div {
+    margin: 0.1rem;
+    width: calc((20vw - 4vw - 2px - 2rem) / 7);
+    height: calc((366px - 36px - 12px - 8rem) / 6);
   }
 
   .search-pannel {
