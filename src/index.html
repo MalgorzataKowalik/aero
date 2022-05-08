@@ -33,11 +33,11 @@
     <section class="wrapper search-pannel">
       <div class="search pannel-field origin">
         <p class="origin field-title">From</p>
-        <p class="origin data">Wrocław</p>
+        <p class="origin data">Origin</p>
       </div>
       <div class="search pannel-field destination">
         <p class="destination field-title">To</p>
-        <p class="destination data">Warsaw</p>
+        <p class="destination data">Destination</p>
       </div>
       <div class="search pannel-field date">
         <p class="date field-title">Date</p>
@@ -45,9 +45,9 @@
       </div>
       <div class="search pannel-field passengers">
         <p class="passengers field-title">Passengers</p>
-        <p class="passengers data">1 Adult, 2 Children</p>
+        <p class="passengers data">1 Adult</p>
       </div>
-      <button class="btn accept">Accept</button>
+      <button class="btn accept hover-pointer">Accept</button>
     </section>
     <section class="wrapper options-pannel">
       <div class="btn close hover-pointer">
@@ -86,23 +86,23 @@
       <div class="options pannel-field passengers">
         <p class="options field-title passengers">Passengers:</p>
         <div class="passengers-container">
-          <p class="passanger-type-title">Adults  <span class="passanger-type-info">(14+)</span></p>
-          <div class="passanger-sign"><i class="fas fa-plus hover-pointer"></i></div>
-          <p class="passanger-amount">1</p>
-          <div class="passanger-sign"><i class="fas fa-minus hover-pointer"></i></div>
-          <p class="passanger-type">Children  <span class="passanger-type-info">(2-14)</span></p>
-          <div class="passanger-sign"><i class="fas fa-plus hover-pointer"></i></div>
-          <p class="passanger-amount">0</p>
-          <div class="passanger-sign"><i class="fas fa-minus hover-pointer"></i></div>
-          <p class="passanger-type">Infants  <span class="passanger-type-info">(0-2)</span></p>
-          <div class="passanger-sign"><i class="fas fa-plus hover-pointer"></i></div>
-          <p class="passanger-amount">0</p>
-          <div class="passanger-sign"><i class="fas fa-minus hover-pointer"></i></div>
+          <p class="passenger-type-title">Adults  <span class="passenger-type-info">(14+)</span></p>
+          <div class="passenger-sign"><i class="fas fa-plus hover-pointer" data-type="adults" data-sign="plus"></i></div>
+          <p class="passenger-amount adults">1</p>
+          <div class="passenger-sign"><i class="fas fa-minus hover-pointer" data-type="adults" data-sign="minus"></i></div>
+          <p class="passenger-type">Children  <span class="passenger-type-info">(2-14)</span></p>
+          <div class="passenger-sign"><i class="fas fa-plus hover-pointer" data-type="children" data-sign="plus"></i></div>
+          <p class="passenger-amount children">0</p>
+          <div class="passenger-sign"><i class="fas fa-minus hover-pointer" data-type="children" data-sign="minus"></i></div>
+          <p class="passenger-type">Infants  <span class="passenger-type-info">(0-2)</span></p>
+          <div class="passenger-sign"><i class="fas fa-plus hover-pointer" data-type="infants" data-sign="plus"></i></div>
+          <p class="passenger-amount infants">0</p>
+          <div class="passenger-sign"><i class="fas fa-minus hover-pointer" data-type="infants" data-sign="minus"></i></div>
+          <button class="btn accept-passengers hover-pointer">Accept</button>
         </div>
-        
       </div>
     </section>
-    <section class="wrapper weather-pannel">
+    <section class="wrapper weather-pannel hover-pointer">
     </section>
     <section class="wrapper login-pannel">
     </section>

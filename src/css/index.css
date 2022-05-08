@@ -249,7 +249,6 @@ nav {
   margin: 15px 0;
   display: grid;
   grid-template-columns: 1fr repeat(3, 15%);
-  grid-template-rows: repeat(3, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 10px;
   font-size: 1.8rem
@@ -259,13 +258,24 @@ nav {
   align-self: center
 }
 
-.passanger-type-info {
+.passenger-type-info {
   font-size: 1.2rem;
   color: #777
 }
 
-.passanger-amount, .passanger-sign {
-  margin: 0 auto
+.passenger-amount, .passenger-sign {
+  margin: 0 auto;
+  color: #01395e;
+}
+
+.passenger-amount {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.accept-passengers {
+  grid-area: 4 / 1 / 5 / 5;
+  margin: 15px auto 0;
 }
 
 .weather-pannel {
