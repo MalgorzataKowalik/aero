@@ -65,7 +65,7 @@ nav {
   background-color: #01395e;
   color: #fff;
   font-family: 'Lato', sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
 }
 
 .hover-pointer:hover {
@@ -90,13 +90,13 @@ nav {
   left: 0;
 }
 
-.search-pannel {
+.search-pannel, .form {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 10px;
 }
 
-.pannel-field {
+.pannel-field, .form-control {
   background-color: #fff;
   border-radius: 20px;
   padding: 5px 4vw;
@@ -107,13 +107,13 @@ nav {
   margin: 14px auto 0;
 }
 
-.pannel-field>.field-title {
+.pannel-field>.field-title, .form-control>label {
   font-size: 1.4rem;
   color: #555
 }
 
 .pannel-field>.data {
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   margin: 5px 0;
 }
 
@@ -179,18 +179,12 @@ nav {
 }
 
 .month h1 {
-  /* height: 100%; */
   line-height: 4rem;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
-  /* margin-bottom: 1rem; */
 }
-
-/* .month p {
-  font-size: 1.5rem;
-} */
 
 .weekdays {
   width: 100%;
@@ -229,19 +223,19 @@ nav {
   transition: background-color 0.2s;
 }
 
-.days div:hover:not(.today) {
-  background-color: #262626;
-  border: 0.2rem solid #777;
+.days div:hover:not(.prev-date):not(.next-date):not(.past-days), .days .chosen {
+  background-color: #01395e;
   cursor: pointer;
+  color: #fff;
 }
 
 .prev-date,
 .next-date {
-  opacity: 0.5;
+  opacity: 0;
 }
 
-.today {
-  background-color: #167e56;
+.past-days {
+  color: #bbb;
 }
 /* calendar end*/
 
@@ -251,7 +245,7 @@ nav {
   grid-template-columns: 1fr repeat(3, 15%);
   grid-column-gap: 0px;
   grid-row-gap: 10px;
-  font-size: 1.8rem
+  font-size: 1.7rem
 }
 
 .passengers-container>* {
@@ -284,9 +278,28 @@ nav {
 }
 
 .login-pannel {
-  height: 300px;
   background-color: #01395e;
   display: none;
+}
+
+.form-control>input {
+  border: none;
+  font-size: 1.7rem;
+  font-family: 'Lato', sans-serif;
+  width: 100%;
+  margin: 5px 0;
+  outline: none;
+}
+
+.login-accept {
+  margin: 14px auto 0;
+  background-color: #206797
+}
+
+.login-error-text {
+  margin: 20px auto;
+  font-size: 1.6rem;
+  color: #ca7641;
 }
 
 @media only screen and (max-width: 1400px) and (min-width: 800px) {
@@ -321,13 +334,13 @@ nav {
 
   .wrapper {
     width: 20vw;
-    padding: 18px 2vw;
+    padding: 18px 1.2vw;
     border-radius: 25px;
   }
   
-  .pannel-field {
+  .pannel-field, .form-control {
     border-radius: 25px;
-    padding: 5px 2vw;
+    padding: 5px 1.8vw;
   }
 
   .calendar {
@@ -336,26 +349,26 @@ nav {
   }
 
   .weekdays div {
-    width: calc((20vw - 4vw - 2px) / 7);
+    width: calc((20vw - 2.4vw - 2px) / 7);
   }
 
   .days div {
     margin: 0.1rem;
-    width: calc((20vw - 4vw - 2px - 2rem) / 7);
-    height: calc((366px - 36px - 12px - 8rem) / 6);
+    width: calc((20vw - 2.4vw - 2px - 2rem) / 7);
+    height: calc((366px - 36px - 16px - 8rem) / 6);
   }
 
   .search-pannel {
-    left: 23.75vw;
+    left: 0;
   }
 
   .options-pannel {
-    left: 44.25vw;
+    left: 20.5vw;
   }
 
-  .weather-pannel {
+  /* .weather-pannel {
     left: 0;
-  }
+  } */
 
   .login-pannel {
     left: 68vw;
