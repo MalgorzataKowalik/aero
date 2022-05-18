@@ -32,9 +32,14 @@ const optionsPassengersSign = [...optionsPassengersContainer.querySelectorAll('.
 const optionsPassengersAmount = [...optionsPassengersContainer.querySelectorAll('.passenger-amount')];
 const optionsPassengersAcceptBtn = document.querySelector('.accept-passengers');
 
+const loginUsernameInput = document.getElementById('username');
+const loginUsernameDiv = document.querySelector(".form-control.username");
+const loginPasswordInput = document.getElementById('password');
+const loginPasswordDiv = document.querySelector(".form-control.password");
+
 const btnLogin = document.querySelector('.btn.login');
 const btnAccept = document.querySelector('.btn.accept');
-const btnClose = document.querySelector('.btn.close');
+const btnLoginAccept = document.querySelector('.btn.login-accept');
 
 const prevMonthArrow = document.querySelector(".prev")
 const nextMonthArrow = document.querySelector(".next")
@@ -231,9 +236,9 @@ function onOptionPassenger(event) {
   passengersDataField.innerText = text
 }
 
-function onOptionsClose(event) {
+function onWrapperClose(event) {
   if (wrapperOptions.style.display == 'block') {
-    if (event.target.closest('.btn.close')) {
+    if (event.target.closest('.btn.close-options')) {
       closeOptions()
     }
     if (window.innerWidth <= 800 && !event.target.closest(".main-container")) {
@@ -241,13 +246,13 @@ function onOptionsClose(event) {
     }
   }
   if (wrapperLogin.style.display == 'block') {
-    if (event.target.closest('.btn.close')) {
+    if (event.target.closest('.btn.close-login')) {
       closeLogin()
     }
     if (window.innerWidth <= 800 && !event.target.closest(".main-container") && !event.target.closest(".login")) {
       closeLogin()
     }
-  }``
+  }
 }
 
 function closeOptions() {
@@ -265,8 +270,48 @@ function onLoginButton() {
   searchPannelVisibility();
 }
 
+function onLoginAcceptButton(event) {
+  event.preventDefault();
+  const username = loginUsernameInput.value;
+  const password = loginPasswordInput.value;
+  if (loginUsernameInput.value == "") {
+    loginUsernameDiv.style.backgroundColor = "#e9af8b";
+    loginUsernameInput.style.backgroundColor = "#e9af8b";
+    loginUsernameInput.classList.add('empty')
+  }
+  if (loginPasswordInput.value == "") {
+    loginPasswordDiv.style.backgroundColor = "#e9af8b";
+    loginPasswordInput.style.backgroundColor = "#e9af8b";
+    loginPasswordInput.classList.add('empty')
+  }
 
-document.addEventListener('click', onOptionsClose)
+  fetch(`https://gist.githubusercontent.com/MalgorzataKowalik/039b073fd0fa4da4e19aeecd4f09e5b5/raw/4a95f8643267a967a4402f4887a17459a9939c13/passwords.json`)
+  .then(res => res.json())
+  .then(data => {
+    const users = data.users
+    users.forEach(user => {
+      if (username == user.username && password == user.password) {
+        console.log("LOGIN SUCCESS")
+      }
+    })
+  })
+}
+
+function onEmptyValue(event) {
+  if (event.target.value == "") {
+    this.parentElement.style.backgroundColor = "#e9af8b";
+    this.style.backgroundColor = "#e9af8b";
+    this.classList.add('empty')
+  } 
+  else {
+    this.parentElement.style.backgroundColor = "#fff";
+    this.style.backgroundColor = "#fff";
+    this.classList.remove('empty')
+  }
+}
+
+
+document.addEventListener('click', onWrapperClose)
 searchFieldOrigin.addEventListener('click', onOrigin)
 searchFieldDestination.addEventListener('click', onDestination)
 searchFieldDate.addEventListener('click', onDate)
@@ -276,6 +321,9 @@ optionsDestination.forEach(option => option.addEventListener('click', onOptionDe
 optionsPassengersSign.forEach(sign => sign.addEventListener('click', onOptionPassenger))
 optionsPassengersAcceptBtn.addEventListener('click', closeOptions)
 btnLogin.addEventListener('click', onLoginButton)
+btnLoginAccept.addEventListener('click', onLoginAcceptButton)
+loginUsernameInput.addEventListener('input', onEmptyValue)
+loginPasswordInput.addEventListener('input', onEmptyValue)
 
 prevMonthArrow.addEventListener("click", () => {
   date.setMonth(date.getMonth() - 1);
