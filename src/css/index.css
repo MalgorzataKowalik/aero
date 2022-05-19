@@ -107,6 +107,15 @@ nav {
   margin: 14px auto 0;
 }
 
+#buttons-wrapper {
+  margin: 14px auto 0;
+  display: none;
+}
+
+.btn.order {
+  background-color: #ca7641;;
+}
+
 .pannel-field>.field-title, .form-control>label {
   font-size: 1.4rem;
   color: #555
@@ -300,6 +309,8 @@ nav {
   margin: 20px auto;
   font-size: 1.6rem;
   color: #ca7641;
+  text-align: center;
+  display: none;
 }
 
 input:-webkit-autofill {

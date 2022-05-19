@@ -32,23 +32,31 @@ const optionsPassengersSign = [...optionsPassengersContainer.querySelectorAll('.
 const optionsPassengersAmount = [...optionsPassengersContainer.querySelectorAll('.passenger-amount')];
 const optionsPassengersAcceptBtn = document.querySelector('.accept-passengers');
 
+const loginForm = document.getElementById('form');
 const loginUsernameInput = document.getElementById('username');
 const loginUsernameDiv = document.querySelector(".form-control.username");
 const loginPasswordInput = document.getElementById('password');
 const loginPasswordDiv = document.querySelector(".form-control.password");
+const loginErrorText = document.querySelector(".login-error-text");
 
 const btnLogin = document.querySelector('.btn.login');
 const btnAccept = document.querySelector('.btn.accept');
 const btnLoginAccept = document.querySelector('.btn.login-accept');
+const btnChange = document.querySelector('.btn.change');
+const btnOrder = document.querySelector('.btn.order');
+const btnsWrapper = document.querySelector('#buttons-wrapper');
 
 const prevMonthArrow = document.querySelector(".prev")
 const nextMonthArrow = document.querySelector(".next")
 
 let origin;
 let destination;
+let flightDate;
 let adults = 1;
 let children = 0;
 let infants = 0;
+let login = false;
+let accepted = false
 
 const date = new Date();
 
@@ -59,9 +67,11 @@ function searchPannelVisibility() {
   }
 }
 function onOption() {
-  wrapperOptions.style.display = 'block';
-  searchPannelVisibility();
-  optionsFields.forEach(option => option.style.display = 'none')
+  if (!accepted) {
+    wrapperOptions.style.display = 'block';
+    searchPannelVisibility();
+    optionsFields.forEach(option => option.style.display = 'none')
+  }
 }
 
 function onOrigin() {
@@ -87,12 +97,14 @@ function onPassengers() {
 function onOptionOrigin(event) {
   origin = event.target.innerText
   originDataField.innerText = origin
+  setColor(searchFieldOrigin, 'valid', false)
   closeOptions()
 }
 
 function onOptionDestination(event) {
   destination = event.target.innerText
   destinationDataField.innerText = destination
+  setColor(searchFieldDestination, 'valid', false)
   closeOptions()
 }
 
@@ -177,6 +189,8 @@ function onOptionDate(event) {
     let month = event.target.dataset.month
     let year = event.target.dataset.year
     dateDataField.innerText = `${day < 10 ? '0' + day : day}/${month < 9 ? '0' + (+month + 1) : (month + 1)}/${year}`
+    flightDate = dateDataField.innerText
+    setColor(searchFieldDate, 'valid', false)
     const daysDivs = [...document.querySelectorAll('.days>div')];
     daysDivs.forEach(day => day.classList.remove('chosen'))
     event.target.classList.add('chosen')
@@ -189,7 +203,6 @@ function onOptionPassenger(event) {
   optionsPassengersAmount.map(item => {
     if (item.classList.contains(type)) {
       let num = +(item.innerText)
-      // console.log(num)
       if (sign === 'plus' && num < 10) {
         if (type === 'adults') {
           ++adults
@@ -260,14 +273,40 @@ function closeOptions() {
   wrapperSearch.style.display = 'grid'
 }
 
+function setColor(target, validator, isForm) {
+  if (validator == 'valid') {
+    target.style.backgroundColor = "#fff";
+    if (isForm) {
+      target.classList.remove('empty')
+      target.parentElement.style.backgroundColor = "#fff";
+    }
+  } else if (validator == 'invalid') {
+    target.style.backgroundColor = "#e9af8b";
+    if (isForm) {
+      target.classList.add('empty')
+      target.parentElement.style.backgroundColor = "#e9af8b";
+    }
+  }
+}
+
 function closeLogin() {
   wrapperLogin.style.display = 'none';
-  wrapperSearch.style.display = 'grid'
+  wrapperSearch.style.display = 'grid';
+  loginForm.reset()
+  loginErrorText.style.display = 'none';
+  setColor(loginPasswordInput, 'valid', true)
+  setColor(loginUsernameInput, 'valid', true)
 }
 
 function onLoginButton() {
-  wrapperLogin.style.display = 'block'
-  searchPannelVisibility();
+  if (login == false) {
+    wrapperLogin.style.display = 'block'
+    searchPannelVisibility();
+  }
+  else {
+    btnLogin.innerText = 'Login'
+    login = false
+  }
 }
 
 function onLoginAcceptButton(event) {
@@ -275,14 +314,10 @@ function onLoginAcceptButton(event) {
   const username = loginUsernameInput.value;
   const password = loginPasswordInput.value;
   if (loginUsernameInput.value == "") {
-    loginUsernameDiv.style.backgroundColor = "#e9af8b";
-    loginUsernameInput.style.backgroundColor = "#e9af8b";
-    loginUsernameInput.classList.add('empty')
+    setColor(loginUsernameInput, 'invalid', true)
   }
   if (loginPasswordInput.value == "") {
-    loginPasswordDiv.style.backgroundColor = "#e9af8b";
-    loginPasswordInput.style.backgroundColor = "#e9af8b";
-    loginPasswordInput.classList.add('empty')
+    setColor(loginPasswordInput, 'invalid', true)
   }
 
   fetch(`https://gist.githubusercontent.com/MalgorzataKowalik/039b073fd0fa4da4e19aeecd4f09e5b5/raw/4a95f8643267a967a4402f4887a17459a9939c13/passwords.json`)
@@ -291,7 +326,12 @@ function onLoginAcceptButton(event) {
     const users = data.users
     users.forEach(user => {
       if (username == user.username && password == user.password) {
-        console.log("LOGIN SUCCESS")
+        btnLogin.innerText = 'Logout';
+        login = true;
+        closeLogin()
+      }
+      else if (username != '' && password != '') {
+        loginErrorText.style.display = 'block'
       }
     })
   })
@@ -299,17 +339,38 @@ function onLoginAcceptButton(event) {
 
 function onEmptyValue(event) {
   if (event.target.value == "") {
-    this.parentElement.style.backgroundColor = "#e9af8b";
-    this.style.backgroundColor = "#e9af8b";
-    this.classList.add('empty')
+    setColor(this, 'invalid', true)
   } 
   else {
-    this.parentElement.style.backgroundColor = "#fff";
-    this.style.backgroundColor = "#fff";
-    this.classList.remove('empty')
+    setColor(this, 'valid', true)
+    loginErrorText.style.display = 'none'
   }
 }
 
+function onAcceptButton() {
+  let originSet = checkIfValueSet(origin, searchFieldOrigin)
+  let destinationSet = checkIfValueSet(destination, searchFieldDestination)
+  let flightDateSet = checkIfValueSet(flightDate, searchFieldDate)
+  if (originSet && destinationSet && flightDateSet) {
+    closeOptions()
+    accepted = true
+    btnsWrapper.style.display = 'block'
+    btnAccept.style.display = 'none'
+    if (login == false) {
+      wrapperLogin.style.display = 'block'
+      searchPannelVisibility();
+    }
+  }
+}
+
+function checkIfValueSet(item, itemElement) {
+  if (item == undefined) {
+    setColor(itemElement, 'invalid', false);
+    return false
+  } else {
+    return true
+  };
+}
 
 document.addEventListener('click', onWrapperClose)
 searchFieldOrigin.addEventListener('click', onOrigin)
@@ -324,12 +385,13 @@ btnLogin.addEventListener('click', onLoginButton)
 btnLoginAccept.addEventListener('click', onLoginAcceptButton)
 loginUsernameInput.addEventListener('input', onEmptyValue)
 loginPasswordInput.addEventListener('input', onEmptyValue)
+btnAccept.addEventListener('click', onAcceptButton)
 
 prevMonthArrow.addEventListener("click", () => {
   date.setMonth(date.getMonth() - 1);
   renderCalendar();
 })
-nextMonthArrow.addEventListener("click", () => {
+nextMonthArrow.addEventListener('click', () => {
   date.setMonth(date.getMonth() + 1);
   renderCalendar();
 });
