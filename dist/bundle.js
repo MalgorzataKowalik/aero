@@ -1,246 +1,27 @@
 /******/ (() => { // webpackBootstrap
-/******/ 	var __webpack_modules__ = ({
-
-/***/ "./node_modules/css-loader/dist/cjs.js!./src/css/index.css":
-/*!*****************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./src/css/index.css ***!
-  \*****************************************************************/
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);
-// Imports
-
-
-
-var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../images/background_image.jpg */ "./src/images/background_image.jpg"), __webpack_require__.b);
-var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
-___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Marmelad&display=swap);"]);
-var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
-// Module
-___CSS_LOADER_EXPORT___.push([module.id, "* {\r\n  margin: 0;\r\n  padding: 0;\r\n  box-sizing: border-box;\r\n}\r\n\r\nhtml {\r\n  font-size: 10px;\r\n  font-family: 'Lato', sans-serif;\r\n}\r\n\r\nbody {\r\n  width: 100%;\r\n  height: 100vh;\r\n}\r\n\r\n.background-image {\r\n  width: 100%;\r\n  height: 100vh;\r\n  position: fixed;\r\n  top: 0;\r\n  left: 0;\r\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\r\n  background-repeat: no-repeat;\r\n  background-size: cover;\r\n  background-position: center;\r\n  z-index: -1;\r\n}\r\n\r\nnav {\r\n  width: 100%;\r\n  padding: 2vh 6vw;\r\n  background: rgba(255, 255, 255, 0.4);\r\n  display: flex;\r\n  justify-content: space-between;\r\n  align-items: center;\r\n}\r\n\r\n.logo {\r\n  max-width: 50%;\r\n  display: flex;\r\n  justify-content: flex-start;\r\n  align-items: center;\r\n}\r\n\r\n.logo img {\r\n  height: 50px;\r\n  width: auto;\r\n  margin-right: 10px;\r\n}\r\n\r\n.logo h1 {\r\n  font-family: 'Marmelad', sans-serif;\r\n  color: #01395e;\r\n  font-size: 2.4rem;\r\n}\r\n\r\n.btn {\r\n  border: none;\r\n  border-radius: 20px;\r\n  width: 120px;\r\n  height: 40px;\r\n  background-color: #01395e;\r\n  color: #fff;\r\n  font-family: 'Lato', sans-serif;\r\n  font-size: 1.8rem;\r\n}\r\n\r\n.btn:hover {\r\n  cursor: pointer;\r\n}\r\n\r\n.main-container {\r\n  width: 88vw;\r\n  position: fixed;\r\n  top: 120px;\r\n  left: 6vw;\r\n}\r\n\r\n.wrapper {\r\n  background-color: rgba(255, 255, 255, 0.4);\r\n  width: 100%;\r\n  padding: 3vh 6vw;\r\n  border-radius: 20px;\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n}\r\n\r\n.search-pannel {\r\n  display: grid;\r\n  grid-template-columns: 1fr;\r\n  grid-gap: 10px;\r\n}\r\n\r\n.pannel-field {\r\n  background-color: #fff;\r\n  border-radius: 20px;\r\n  padding: 5px 4vw;\r\n}\r\n\r\n.accept {\r\n  margin: 2vh auto 0;\r\n}\r\n\r\n.pannel-field>.field-title {\r\n  font-size: 1.4rem;\r\n  color: #555\r\n}\r\n\r\n.pannel-field>.data {\r\n  font-size: 1.8rem;\r\n  margin: 5px 0;\r\n}\r\n\r\n.options-pannel {\r\n  display: none;\r\n}\r\n\r\n.options.pannel-field {\r\n  display: none;\r\n}\r\n\r\n.close {\r\n  width: 30px;\r\n  height: 30px;\r\n  border-radius: 15px;\r\n  position: absolute;\r\n  top: -10px;\r\n  right: -10px;\r\n}\r\n\r\n.close:hover {\r\n  cursor: pointer;\r\n}\r\n\r\n.close-img {\r\n  width: 14px;\r\n  height: 14px;\r\n  position: absolute;\r\n  top: 50%;\r\n  left: 50%;\r\n  transform: translate(-50%, -50%);\r\n}\r\n\r\n.option:hover {\r\n  cursor: pointer;\r\n  font-weight: 600;\r\n}\r\n\r\n.weather-pannel {\r\n  height: 300px;\r\n  /* display: none; */\r\n}\r\n\r\n.login-pannel {\r\n  height: 300px;\r\n  background-color: #01395e;\r\n  /* display: none; */\r\n}\r\n\r\n@media only screen and (min-width: 800px) {\r\n  nav {\r\n    padding: 2vh 3vw;\r\n  }\r\n\r\n  .logo img {\r\n    height: 60px;\r\n  }\r\n\r\n  .logo h1 {\r\n    font-size: 2.8rem;\r\n  }\r\n\r\n  .btn-login {\r\n    border-radius: 25px;\r\n    width: 150px;\r\n    height: 50px;\r\n    font-size: 2rem;\r\n  }\r\n\r\n  .main-container {\r\n    top: 150px;\r\n  }\r\n\r\n  .wrapper {\r\n    width: 20vw;\r\n    padding: 3vh 2vw;\r\n    border-radius: 25px;\r\n  }\r\n  \r\n  .pannel-field {\r\n    border-radius: 25px;\r\n    padding: 5px 2vw;\r\n  }\r\n\r\n  .search-pannel {\r\n    left: 23.75vw;\r\n  }\r\n\r\n  .options-pannel {\r\n    left: 44.25vw;\r\n  }\r\n\r\n  .weather-pannel {\r\n    left: 0;\r\n  }\r\n\r\n  .login-pannel {\r\n    left: 68vw;\r\n  }\r\n}", "",{"version":3,"sources":["webpack://./src/css/index.css"],"names":[],"mappings":"AAEA;EACE,SAAS;EACT,UAAU;EACV,sBAAsB;AACxB;;AAEA;EACE,eAAe;EACf,+BAA+B;AACjC;;AAEA;EACE,WAAW;EACX,aAAa;AACf;;AAEA;EACE,WAAW;EACX,aAAa;EACb,eAAe;EACf,MAAM;EACN,OAAO;EACP,yDAAuD;EACvD,4BAA4B;EAC5B,sBAAsB;EACtB,2BAA2B;EAC3B,WAAW;AACb;;AAEA;EACE,WAAW;EACX,gBAAgB;EAChB,oCAAoC;EACpC,aAAa;EACb,8BAA8B;EAC9B,mBAAmB;AACrB;;AAEA;EACE,cAAc;EACd,aAAa;EACb,2BAA2B;EAC3B,mBAAmB;AACrB;;AAEA;EACE,YAAY;EACZ,WAAW;EACX,kBAAkB;AACpB;;AAEA;EACE,mCAAmC;EACnC,cAAc;EACd,iBAAiB;AACnB;;AAEA;EACE,YAAY;EACZ,mBAAmB;EACnB,YAAY;EACZ,YAAY;EACZ,yBAAyB;EACzB,WAAW;EACX,+BAA+B;EAC/B,iBAAiB;AACnB;;AAEA;EACE,eAAe;AACjB;;AAEA;EACE,WAAW;EACX,eAAe;EACf,UAAU;EACV,SAAS;AACX;;AAEA;EACE,0CAA0C;EAC1C,WAAW;EACX,gBAAgB;EAChB,mBAAmB;EACnB,kBAAkB;EAClB,MAAM;EACN,OAAO;AACT;;AAEA;EACE,aAAa;EACb,0BAA0B;EAC1B,cAAc;AAChB;;AAEA;EACE,sBAAsB;EACtB,mBAAmB;EACnB,gBAAgB;AAClB;;AAEA;EACE,kBAAkB;AACpB;;AAEA;EACE,iBAAiB;EACjB;AACF;;AAEA;EACE,iBAAiB;EACjB,aAAa;AACf;;AAEA;EACE,aAAa;AACf;;AAEA;EACE,aAAa;AACf;;AAEA;EACE,WAAW;EACX,YAAY;EACZ,mBAAmB;EACnB,kBAAkB;EAClB,UAAU;EACV,YAAY;AACd;;AAEA;EACE,eAAe;AACjB;;AAEA;EACE,WAAW;EACX,YAAY;EACZ,kBAAkB;EAClB,QAAQ;EACR,SAAS;EACT,gCAAgC;AAClC;;AAEA;EACE,eAAe;EACf,gBAAgB;AAClB;;AAEA;EACE,aAAa;EACb,mBAAmB;AACrB;;AAEA;EACE,aAAa;EACb,yBAAyB;EACzB,mBAAmB;AACrB;;AAEA;EACE;IACE,gBAAgB;EAClB;;EAEA;IACE,YAAY;EACd;;EAEA;IACE,iBAAiB;EACnB;;EAEA;IACE,mBAAmB;IACnB,YAAY;IACZ,YAAY;IACZ,eAAe;EACjB;;EAEA;IACE,UAAU;EACZ;;EAEA;IACE,WAAW;IACX,gBAAgB;IAChB,mBAAmB;EACrB;;EAEA;IACE,mBAAmB;IACnB,gBAAgB;EAClB;;EAEA;IACE,aAAa;EACf;;EAEA;IACE,aAAa;EACf;;EAEA;IACE,OAAO;EACT;;EAEA;IACE,UAAU;EACZ;AACF","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Marmelad&display=swap');\r\n\r\n* {\r\n  margin: 0;\r\n  padding: 0;\r\n  box-sizing: border-box;\r\n}\r\n\r\nhtml {\r\n  font-size: 10px;\r\n  font-family: 'Lato', sans-serif;\r\n}\r\n\r\nbody {\r\n  width: 100%;\r\n  height: 100vh;\r\n}\r\n\r\n.background-image {\r\n  width: 100%;\r\n  height: 100vh;\r\n  position: fixed;\r\n  top: 0;\r\n  left: 0;\r\n  background-image: url('../images/background_image.jpg');\r\n  background-repeat: no-repeat;\r\n  background-size: cover;\r\n  background-position: center;\r\n  z-index: -1;\r\n}\r\n\r\nnav {\r\n  width: 100%;\r\n  padding: 2vh 6vw;\r\n  background: rgba(255, 255, 255, 0.4);\r\n  display: flex;\r\n  justify-content: space-between;\r\n  align-items: center;\r\n}\r\n\r\n.logo {\r\n  max-width: 50%;\r\n  display: flex;\r\n  justify-content: flex-start;\r\n  align-items: center;\r\n}\r\n\r\n.logo img {\r\n  height: 50px;\r\n  width: auto;\r\n  margin-right: 10px;\r\n}\r\n\r\n.logo h1 {\r\n  font-family: 'Marmelad', sans-serif;\r\n  color: #01395e;\r\n  font-size: 2.4rem;\r\n}\r\n\r\n.btn {\r\n  border: none;\r\n  border-radius: 20px;\r\n  width: 120px;\r\n  height: 40px;\r\n  background-color: #01395e;\r\n  color: #fff;\r\n  font-family: 'Lato', sans-serif;\r\n  font-size: 1.8rem;\r\n}\r\n\r\n.btn:hover {\r\n  cursor: pointer;\r\n}\r\n\r\n.main-container {\r\n  width: 88vw;\r\n  position: fixed;\r\n  top: 120px;\r\n  left: 6vw;\r\n}\r\n\r\n.wrapper {\r\n  background-color: rgba(255, 255, 255, 0.4);\r\n  width: 100%;\r\n  padding: 3vh 6vw;\r\n  border-radius: 20px;\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n}\r\n\r\n.search-pannel {\r\n  display: grid;\r\n  grid-template-columns: 1fr;\r\n  grid-gap: 10px;\r\n}\r\n\r\n.pannel-field {\r\n  background-color: #fff;\r\n  border-radius: 20px;\r\n  padding: 5px 4vw;\r\n}\r\n\r\n.accept {\r\n  margin: 2vh auto 0;\r\n}\r\n\r\n.pannel-field>.field-title {\r\n  font-size: 1.4rem;\r\n  color: #555\r\n}\r\n\r\n.pannel-field>.data {\r\n  font-size: 1.8rem;\r\n  margin: 5px 0;\r\n}\r\n\r\n.options-pannel {\r\n  display: none;\r\n}\r\n\r\n.options.pannel-field {\r\n  display: none;\r\n}\r\n\r\n.close {\r\n  width: 30px;\r\n  height: 30px;\r\n  border-radius: 15px;\r\n  position: absolute;\r\n  top: -10px;\r\n  right: -10px;\r\n}\r\n\r\n.close:hover {\r\n  cursor: pointer;\r\n}\r\n\r\n.close-img {\r\n  width: 14px;\r\n  height: 14px;\r\n  position: absolute;\r\n  top: 50%;\r\n  left: 50%;\r\n  transform: translate(-50%, -50%);\r\n}\r\n\r\n.option:hover {\r\n  cursor: pointer;\r\n  font-weight: 600;\r\n}\r\n\r\n.weather-pannel {\r\n  height: 300px;\r\n  /* display: none; */\r\n}\r\n\r\n.login-pannel {\r\n  height: 300px;\r\n  background-color: #01395e;\r\n  /* display: none; */\r\n}\r\n\r\n@media only screen and (min-width: 800px) {\r\n  nav {\r\n    padding: 2vh 3vw;\r\n  }\r\n\r\n  .logo img {\r\n    height: 60px;\r\n  }\r\n\r\n  .logo h1 {\r\n    font-size: 2.8rem;\r\n  }\r\n\r\n  .btn-login {\r\n    border-radius: 25px;\r\n    width: 150px;\r\n    height: 50px;\r\n    font-size: 2rem;\r\n  }\r\n\r\n  .main-container {\r\n    top: 150px;\r\n  }\r\n\r\n  .wrapper {\r\n    width: 20vw;\r\n    padding: 3vh 2vw;\r\n    border-radius: 25px;\r\n  }\r\n  \r\n  .pannel-field {\r\n    border-radius: 25px;\r\n    padding: 5px 2vw;\r\n  }\r\n\r\n  .search-pannel {\r\n    left: 23.75vw;\r\n  }\r\n\r\n  .options-pannel {\r\n    left: 44.25vw;\r\n  }\r\n\r\n  .weather-pannel {\r\n    left: 0;\r\n  }\r\n\r\n  .login-pannel {\r\n    left: 68vw;\r\n  }\r\n}"],"sourceRoot":""}]);
-// Exports
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
-
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/dist/runtime/api.js":
-/*!*****************************************************!*\
-  !*** ./node_modules/css-loader/dist/runtime/api.js ***!
-  \*****************************************************/
-/***/ ((module) => {
-
-"use strict";
-
-
-/*
-  MIT License http://www.opensource.org/licenses/mit-license.php
-  Author Tobias Koppers @sokra
-*/
-module.exports = function (cssWithMappingToString) {
-  var list = []; // return the list of modules as css string
-
-  list.toString = function toString() {
-    return this.map(function (item) {
-      var content = "";
-      var needLayer = typeof item[5] !== "undefined";
-
-      if (item[4]) {
-        content += "@supports (".concat(item[4], ") {");
-      }
-
-      if (item[2]) {
-        content += "@media ".concat(item[2], " {");
-      }
-
-      if (needLayer) {
-        content += "@layer".concat(item[5].length > 0 ? " ".concat(item[5]) : "", " {");
-      }
-
-      content += cssWithMappingToString(item);
-
-      if (needLayer) {
-        content += "}";
-      }
-
-      if (item[2]) {
-        content += "}";
-      }
-
-      if (item[4]) {
-        content += "}";
-      }
-
-      return content;
-    }).join("");
-  }; // import a list of modules into the list
-
-
-  list.i = function i(modules, media, dedupe, supports, layer) {
-    if (typeof modules === "string") {
-      modules = [[null, modules, undefined]];
-    }
-
-    var alreadyImportedModules = {};
-
-    if (dedupe) {
-      for (var k = 0; k < this.length; k++) {
-        var id = this[k][0];
-
-        if (id != null) {
-          alreadyImportedModules[id] = true;
-        }
-      }
-    }
-
-    for (var _k = 0; _k < modules.length; _k++) {
-      var item = [].concat(modules[_k]);
-
-      if (dedupe && alreadyImportedModules[item[0]]) {
-        continue;
-      }
-
-      if (typeof layer !== "undefined") {
-        if (typeof item[5] === "undefined") {
-          item[5] = layer;
-        } else {
-          item[1] = "@layer".concat(item[5].length > 0 ? " ".concat(item[5]) : "", " {").concat(item[1], "}");
-          item[5] = layer;
-        }
-      }
-
-      if (media) {
-        if (!item[2]) {
-          item[2] = media;
-        } else {
-          item[1] = "@media ".concat(item[2], " {").concat(item[1], "}");
-          item[2] = media;
-        }
-      }
-
-      if (supports) {
-        if (!item[4]) {
-          item[4] = "".concat(supports);
-        } else {
-          item[1] = "@supports (".concat(item[4], ") {").concat(item[1], "}");
-          item[4] = supports;
-        }
-      }
-
-      list.push(item);
-    }
-  };
-
-  return list;
-};
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/dist/runtime/getUrl.js":
-/*!********************************************************!*\
-  !*** ./node_modules/css-loader/dist/runtime/getUrl.js ***!
-  \********************************************************/
-/***/ ((module) => {
-
-"use strict";
-
-
-module.exports = function (url, options) {
-  if (!options) {
-    options = {};
-  }
-
-  if (!url) {
-    return url;
-  }
-
-  url = String(url.__esModule ? url.default : url); // If url is already wrapped in quotes, remove them
-
-  if (/^['"].*['"]$/.test(url)) {
-    url = url.slice(1, -1);
-  }
-
-  if (options.hash) {
-    url += options.hash;
-  } // Should url be wrapped?
-  // See https://drafts.csswg.org/css-values-3/#urls
-
-
-  if (/["'() \t\n]|(%20)/.test(url) || options.needQuotes) {
-    return "\"".concat(url.replace(/"/g, '\\"').replace(/\n/g, "\\n"), "\"");
-  }
-
-  return url;
-};
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/dist/runtime/sourceMaps.js":
-/*!************************************************************!*\
-  !*** ./node_modules/css-loader/dist/runtime/sourceMaps.js ***!
-  \************************************************************/
-/***/ ((module) => {
-
-"use strict";
-
-
-module.exports = function (item) {
-  var content = item[1];
-  var cssMapping = item[3];
-
-  if (!cssMapping) {
-    return content;
-  }
-
-  if (typeof btoa === "function") {
-    var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(cssMapping))));
-    var data = "sourceMappingURL=data:application/json;charset=utf-8;base64,".concat(base64);
-    var sourceMapping = "/*# ".concat(data, " */");
-    var sourceURLs = cssMapping.sources.map(function (source) {
-      return "/*# sourceURL=".concat(cssMapping.sourceRoot || "").concat(source, " */");
-    });
-    return [content].concat(sourceURLs).concat([sourceMapping]).join("\n");
-  }
-
-  return [content].join("\n");
-};
-
-/***/ }),
-
-/***/ "./src/css/index.css":
-/*!***************************!*\
-  !*** ./src/css/index.css ***!
-  \***************************/
+/******/ 	"use strict";
+/******/ 	var __webpack_modules__ = ([
+/* 0 */,
+/* 1 */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2);
 /* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(3);
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(4);
 /* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(5);
 /* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(6);
 /* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(7);
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_index_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../node_modules/css-loader/dist/cjs.js!./index.css */ "./node_modules/css-loader/dist/cjs.js!./src/css/index.css");
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_index_css__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(8);
 
       
       
@@ -271,14 +52,9 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 
 /***/ }),
-
-/***/ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js":
-/*!****************************************************************************!*\
-  !*** ./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js ***!
-  \****************************************************************************/
+/* 2 */
 /***/ ((module) => {
 
-"use strict";
 
 
 var stylesInDOM = [];
@@ -385,106 +161,9 @@ module.exports = function (list, options) {
 };
 
 /***/ }),
-
-/***/ "./node_modules/style-loader/dist/runtime/insertBySelector.js":
-/*!********************************************************************!*\
-  !*** ./node_modules/style-loader/dist/runtime/insertBySelector.js ***!
-  \********************************************************************/
+/* 3 */
 /***/ ((module) => {
 
-"use strict";
-
-
-var memo = {};
-/* istanbul ignore next  */
-
-function getTarget(target) {
-  if (typeof memo[target] === "undefined") {
-    var styleTarget = document.querySelector(target); // Special case to return head of iframe instead of iframe itself
-
-    if (window.HTMLIFrameElement && styleTarget instanceof window.HTMLIFrameElement) {
-      try {
-        // This will throw an exception if access to iframe is blocked
-        // due to cross-origin restrictions
-        styleTarget = styleTarget.contentDocument.head;
-      } catch (e) {
-        // istanbul ignore next
-        styleTarget = null;
-      }
-    }
-
-    memo[target] = styleTarget;
-  }
-
-  return memo[target];
-}
-/* istanbul ignore next  */
-
-
-function insertBySelector(insert, style) {
-  var target = getTarget(insert);
-
-  if (!target) {
-    throw new Error("Couldn't find a style target. This probably means that the value for the 'insert' parameter is invalid.");
-  }
-
-  target.appendChild(style);
-}
-
-module.exports = insertBySelector;
-
-/***/ }),
-
-/***/ "./node_modules/style-loader/dist/runtime/insertStyleElement.js":
-/*!**********************************************************************!*\
-  !*** ./node_modules/style-loader/dist/runtime/insertStyleElement.js ***!
-  \**********************************************************************/
-/***/ ((module) => {
-
-"use strict";
-
-
-/* istanbul ignore next  */
-function insertStyleElement(options) {
-  var element = document.createElement("style");
-  options.setAttributes(element, options.attributes);
-  options.insert(element, options.options);
-  return element;
-}
-
-module.exports = insertStyleElement;
-
-/***/ }),
-
-/***/ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js":
-/*!**********************************************************************************!*\
-  !*** ./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js ***!
-  \**********************************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-
-
-/* istanbul ignore next  */
-function setAttributesWithoutAttributes(styleElement) {
-  var nonce =  true ? __webpack_require__.nc : 0;
-
-  if (nonce) {
-    styleElement.setAttribute("nonce", nonce);
-  }
-}
-
-module.exports = setAttributesWithoutAttributes;
-
-/***/ }),
-
-/***/ "./node_modules/style-loader/dist/runtime/styleDomAPI.js":
-/*!***************************************************************!*\
-  !*** ./node_modules/style-loader/dist/runtime/styleDomAPI.js ***!
-  \***************************************************************/
-/***/ ((module) => {
-
-"use strict";
 
 
 /* istanbul ignore next  */
@@ -557,14 +236,86 @@ function domAPI(options) {
 module.exports = domAPI;
 
 /***/ }),
-
-/***/ "./node_modules/style-loader/dist/runtime/styleTagTransform.js":
-/*!*********************************************************************!*\
-  !*** ./node_modules/style-loader/dist/runtime/styleTagTransform.js ***!
-  \*********************************************************************/
+/* 4 */
 /***/ ((module) => {
 
-"use strict";
+
+
+var memo = {};
+/* istanbul ignore next  */
+
+function getTarget(target) {
+  if (typeof memo[target] === "undefined") {
+    var styleTarget = document.querySelector(target); // Special case to return head of iframe instead of iframe itself
+
+    if (window.HTMLIFrameElement && styleTarget instanceof window.HTMLIFrameElement) {
+      try {
+        // This will throw an exception if access to iframe is blocked
+        // due to cross-origin restrictions
+        styleTarget = styleTarget.contentDocument.head;
+      } catch (e) {
+        // istanbul ignore next
+        styleTarget = null;
+      }
+    }
+
+    memo[target] = styleTarget;
+  }
+
+  return memo[target];
+}
+/* istanbul ignore next  */
+
+
+function insertBySelector(insert, style) {
+  var target = getTarget(insert);
+
+  if (!target) {
+    throw new Error("Couldn't find a style target. This probably means that the value for the 'insert' parameter is invalid.");
+  }
+
+  target.appendChild(style);
+}
+
+module.exports = insertBySelector;
+
+/***/ }),
+/* 5 */
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+
+
+/* istanbul ignore next  */
+function setAttributesWithoutAttributes(styleElement) {
+  var nonce =  true ? __webpack_require__.nc : 0;
+
+  if (nonce) {
+    styleElement.setAttribute("nonce", nonce);
+  }
+}
+
+module.exports = setAttributesWithoutAttributes;
+
+/***/ }),
+/* 6 */
+/***/ ((module) => {
+
+
+
+/* istanbul ignore next  */
+function insertStyleElement(options) {
+  var element = document.createElement("style");
+  options.setAttributes(element, options.attributes);
+  options.insert(element, options.options);
+  return element;
+}
+
+module.exports = insertStyleElement;
+
+/***/ }),
+/* 7 */
+/***/ ((module) => {
+
 
 
 /* istanbul ignore next  */
@@ -583,57 +334,227 @@ function styleTagTransform(css, styleElement) {
 module.exports = styleTagTransform;
 
 /***/ }),
+/* 8 */
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
 
-/***/ "./src/sum.js":
-/*!********************!*\
-  !*** ./src/sum.js ***!
-  \********************/
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(10);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(11);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);
+// Imports
+
+
+
+var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(12), __webpack_require__.b);
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Marmelad&display=swap);"]);
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, "* {\r\n  margin: 0;\r\n  padding: 0;\r\n  box-sizing: border-box;\r\n}\r\n\r\nhtml {\r\n  font-size: 10px;\r\n  font-family: 'Lato', sans-serif;\r\n}\r\n\r\nbody {\r\n  width: 100%;\r\n  height: 870px;\r\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\r\n  background-repeat: no-repeat;\r\n  background-size: cover;\r\n  background-position: center;\r\n}\r\n\r\n/* .background-image {\r\n  width: 100%;\r\n  height: 100%;\r\n  position: fixed;\r\n  top: 0;\r\n  left: 0;\r\n  background-image: url('../images/background_image.jpg');\r\n  background-repeat: no-repeat;\r\n  background-size: cover;\r\n  background-position: center;\r\n  z-index: -1;\r\n} */\r\n\r\nnav {\r\n  width: 100%;\r\n  padding: 2vh 6vw;\r\n  background: rgba(255, 255, 255, 0.4);\r\n  display: flex;\r\n  justify-content: space-between;\r\n  align-items: center;\r\n}\r\n\r\n.logo {\r\n  max-width: 50%;\r\n  display: flex;\r\n  justify-content: flex-start;\r\n  align-items: center;\r\n}\r\n\r\n.logo img {\r\n  height: 50px;\r\n  width: auto;\r\n  margin-right: 10px;\r\n}\r\n\r\n.logo h1 {\r\n  font-family: 'Marmelad', sans-serif;\r\n  color: #01395e;\r\n  font-size: 2.4rem;\r\n}\r\n\r\n.btn {\r\n  border: none;\r\n  border-radius: 20px;\r\n  width: 120px;\r\n  height: 40px;\r\n  background-color: #01395e;\r\n  color: #fff;\r\n  font-family: 'Lato', sans-serif;\r\n  font-size: 1.7rem;\r\n}\r\n\r\n.hover-pointer:hover {\r\n  cursor: pointer;\r\n}\r\n\r\n.main-container {\r\n  width: 88vw;\r\n  position: absolute;\r\n  top: 100px;\r\n  left: 6vw;\r\n}\r\n\r\n.wrapper {\r\n  background-color: rgba(255, 255, 255, 0.4);\r\n  width: 100%;\r\n  height: 366px;\r\n  padding: 18px 20px;\r\n  border-radius: 20px;\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n}\r\n\r\n.search-pannel, .form {\r\n  display: grid;\r\n  grid-template-columns: 1fr;\r\n  grid-gap: 10px;\r\n}\r\n\r\n.pannel-field, .form-control {\r\n  background-color: #fff;\r\n  border-radius: 20px;\r\n  padding: 5px 4vw;\r\n  width: 100%;\r\n}\r\n\r\n/* .accept {\r\n  margin: 14px auto 0;\r\n} */\r\n\r\n#buttons-wrapper {\r\n  margin: 14px auto 0;\r\n}\r\n\r\n/* .btn.order {\r\n  background-color: #ca7641;;\r\n} */\r\n\r\n.btn.order {\r\n  background-color: #ca7641;\r\n}\r\n\r\n.btn:disabled {\r\n  background-color: #8b8b8b;\r\n  cursor: auto;\r\n}\r\n\r\n.pannel-field>.field-title, .form-control>label {\r\n  font-size: 1.4rem;\r\n  color: #555\r\n}\r\n\r\n.pannel-field>.data {\r\n  font-size: 1.7rem;\r\n  margin: 5px 0;\r\n}\r\n\r\n.options-pannel {\r\n  display: none;\r\n  justify-content: center;\r\n  align-items: flex-start;\r\n}\r\n\r\n.options.pannel-field {\r\n  display: none;\r\n}\r\n\r\n.close {\r\n  width: 30px;\r\n  height: 30px;\r\n  border-radius: 15px;\r\n  position: absolute;\r\n  top: -10px;\r\n  right: -10px;\r\n}\r\n\r\n.close-img {\r\n  width: 14px;\r\n  height: 14px;\r\n  position: absolute;\r\n  top: 50%;\r\n  left: 50%;\r\n  transform: translate(-50%, -50%);\r\n}\r\n\r\n.close.close-seats {\r\n  top: 0;\r\n  right: 0;\r\n}\r\n\r\n.option.origin:hover, .option.destination:hover {\r\n  cursor: pointer;\r\n  font-weight: 600;\r\n}\r\n\r\n/* calendar start*/\r\n\r\n.calendar {\r\n  padding: 0;\r\n  background-color: #fff;\r\n  border-radius: 20px;\r\n  width: 100%;\r\n  display: none;\r\n}\r\n\r\n.month {\r\n  width: 100%;\r\n  height: 4rem;\r\n  background-color: #01395e;\r\n  color: #fff;\r\n  display: flex;\r\n  justify-content: space-between;\r\n  align-items: center;\r\n  padding: 0 2rem;\r\n  text-align: center;\r\n  border-radius: 20px 20px 0 0;\r\n}\r\n\r\n.month i {\r\n  font-size: 2.5rem;\r\n  cursor: pointer;\r\n}\r\n\r\n.month h1 {\r\n  line-height: 4rem;\r\n  font-size: 1.7rem;\r\n  font-weight: 400;\r\n  text-transform: uppercase;\r\n  letter-spacing: 0.2rem;\r\n}\r\n\r\n.weekdays {\r\n  width: 100%;\r\n  height: 4rem;\r\n  padding: 0 0.4rem;\r\n  display: flex;\r\n  align-items: center;\r\n}\r\n\r\n.weekdays div {\r\n  font-size: 1.4rem;\r\n  font-weight: 400;\r\n  letter-spacing: 0.1rem;\r\n  width: calc((86vw - 42px) / 7);\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n}\r\n\r\n.days {\r\n  width: 100%;\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  justify-content: center;\r\n  padding: 0.2rem;\r\n}\r\n\r\n.days div {\r\n  font-size: 1.3rem;\r\n  margin: calc(1vw / 14);\r\n  width: calc((86vw - 54px) / 7);\r\n  height: calc((366px - 36px - 10px - 8rem) / 6);\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n  transition: background-color 0.2s;\r\n}\r\n\r\n.days div:hover:not(.prev-date):not(.next-date):not(.past-days), .days .chosen {\r\n  background-color: #01395e;\r\n  cursor: pointer;\r\n  color: #fff;\r\n}\r\n\r\n.prev-date,\r\n.next-date {\r\n  opacity: 0;\r\n}\r\n\r\n.past-days {\r\n  color: #bbb;\r\n}\r\n/* calendar end*/\r\n\r\n.passengers-container {\r\n  margin: 15px 0;\r\n  display: grid;\r\n  grid-template-columns: 1fr repeat(3, 15%);\r\n  grid-column-gap: 0px;\r\n  grid-row-gap: 10px;\r\n  font-size: 1.7rem\r\n}\r\n\r\n.passengers-container>* {\r\n  align-self: center\r\n}\r\n\r\n.passenger-type-info {\r\n  font-size: 1.2rem;\r\n  color: #777\r\n}\r\n\r\n.passenger-amount, .passenger-sign {\r\n  margin: 0 auto;\r\n  color: #01395e;\r\n}\r\n\r\n.passenger-amount {\r\n  font-size: 2rem;\r\n  font-weight: bold;\r\n}\r\n\r\n.accept-passengers {\r\n  grid-area: 4 / 1 / 5 / 5;\r\n  margin: 15px auto 0;\r\n}\r\n\r\n.weather-pannel {\r\n  height: 300px;\r\n  display: none;\r\n}\r\n\r\n.login-pannel {\r\n  background-color: #01395e;\r\n  display: none;\r\n}\r\n\r\n.form-control>input {\r\n  border: none;\r\n  font-size: 1.7rem;\r\n  font-family: 'Lato', sans-serif;\r\n  width: 100%;\r\n  margin: 5px 0;\r\n  outline: none;\r\n}\r\n\r\n.login-accept {\r\n  margin: 14px auto 0;\r\n  background-color: #206797\r\n}\r\n\r\n.login-error-text {\r\n  margin: 20px auto;\r\n  font-size: 1.6rem;\r\n  color: #ca7641;\r\n  text-align: center;\r\n  display: none;\r\n}\r\n\r\n.airplane {\r\n  width: 100%;\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  overflow-y: scroll;\r\n  display: none;\r\n}\r\n\r\n#airplane-svg {\r\n  height: 750px;\r\n  width: 100%;\r\n  margin: 0 auto;\r\n}\r\n\r\n.seat:hover {\r\n  cursor: pointer;\r\n}\r\n\r\n[id=384617]>rect {\r\n  fill: #ff00ff;\r\n}\r\n\r\ninput:-webkit-autofill {\r\n  -webkit-box-shadow: 0 0 0px 1000px #fff inset;\r\n}\r\n\r\ninput.empty:-webkit-autofill {\r\n  -webkit-box-shadow: 0 0 0px 1000px #e9af8b inset;\r\n}\r\n\r\n@media only screen and (max-width: 1400px) and (min-width: 800px) {\r\n  html {\r\n    font-size: 8px;\r\n  }\r\n}\r\n\r\n@media only screen and (min-width: 800px) {\r\n  body {\r\n    height: 100vh;\r\n  }\r\n  nav {\r\n    padding: 2vh 3vw;\r\n  }\r\n\r\n  .logo img {\r\n    height: 60px;\r\n  }\r\n\r\n  .logo h1 {\r\n    font-size: 2.8rem;\r\n  }\r\n\r\n  .btn-login {\r\n    border-radius: 25px;\r\n    width: 150px;\r\n    height: 50px;\r\n    font-size: 2rem;\r\n  }\r\n\r\n  .main-container {\r\n    top: 150px;\r\n  }\r\n\r\n  .wrapper {\r\n    width: 20vw;\r\n    padding: 18px 1.2vw;\r\n    border-radius: 25px;\r\n  }\r\n  \r\n  .pannel-field, .form-control {\r\n    border-radius: 25px;\r\n    padding: 5px 1.8vw;\r\n  }\r\n\r\n  .calendar {\r\n    padding: 0;\r\n    border-radius: 25px;\r\n  }\r\n\r\n  .weekdays div {\r\n    width: calc((20vw - 2.4vw - 2px) / 7);\r\n  }\r\n\r\n  .days div {\r\n    margin: 0.1rem;\r\n    width: calc((20vw - 2.4vw - 2px - 2rem) / 7);\r\n    height: calc((366px - 36px - 16px - 8rem) / 6);\r\n  }\r\n\r\n  .search-pannel {\r\n    left: 0;\r\n  }\r\n\r\n  .options-pannel {\r\n    left: 20.5vw;\r\n  }\r\n\r\n  /* .weather-pannel {\r\n    left: 0;\r\n  } */\r\n\r\n  .login-pannel {\r\n    left: 68vw;\r\n  }\r\n\r\n  .airplane {\r\n    width: 20vw;\r\n    left: 20.5vw;\r\n    overflow-y: auto;\r\n  }\r\n\r\n  #airplane-svg {\r\n    height: 700px;\r\n  }\r\n}", "",{"version":3,"sources":["webpack://./src/css/index.css"],"names":[],"mappings":"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","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Marmelad&display=swap');\r\n\r\n* {\r\n  margin: 0;\r\n  padding: 0;\r\n  box-sizing: border-box;\r\n}\r\n\r\nhtml {\r\n  font-size: 10px;\r\n  font-family: 'Lato', sans-serif;\r\n}\r\n\r\nbody {\r\n  width: 100%;\r\n  height: 870px;\r\n  background-image: url('../images/background_image.jpg');\r\n  background-repeat: no-repeat;\r\n  background-size: cover;\r\n  background-position: center;\r\n}\r\n\r\n/* .background-image {\r\n  width: 100%;\r\n  height: 100%;\r\n  position: fixed;\r\n  top: 0;\r\n  left: 0;\r\n  background-image: url('../images/background_image.jpg');\r\n  background-repeat: no-repeat;\r\n  background-size: cover;\r\n  background-position: center;\r\n  z-index: -1;\r\n} */\r\n\r\nnav {\r\n  width: 100%;\r\n  padding: 2vh 6vw;\r\n  background: rgba(255, 255, 255, 0.4);\r\n  display: flex;\r\n  justify-content: space-between;\r\n  align-items: center;\r\n}\r\n\r\n.logo {\r\n  max-width: 50%;\r\n  display: flex;\r\n  justify-content: flex-start;\r\n  align-items: center;\r\n}\r\n\r\n.logo img {\r\n  height: 50px;\r\n  width: auto;\r\n  margin-right: 10px;\r\n}\r\n\r\n.logo h1 {\r\n  font-family: 'Marmelad', sans-serif;\r\n  color: #01395e;\r\n  font-size: 2.4rem;\r\n}\r\n\r\n.btn {\r\n  border: none;\r\n  border-radius: 20px;\r\n  width: 120px;\r\n  height: 40px;\r\n  background-color: #01395e;\r\n  color: #fff;\r\n  font-family: 'Lato', sans-serif;\r\n  font-size: 1.7rem;\r\n}\r\n\r\n.hover-pointer:hover {\r\n  cursor: pointer;\r\n}\r\n\r\n.main-container {\r\n  width: 88vw;\r\n  position: absolute;\r\n  top: 100px;\r\n  left: 6vw;\r\n}\r\n\r\n.wrapper {\r\n  background-color: rgba(255, 255, 255, 0.4);\r\n  width: 100%;\r\n  height: 366px;\r\n  padding: 18px 20px;\r\n  border-radius: 20px;\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n}\r\n\r\n.search-pannel, .form {\r\n  display: grid;\r\n  grid-template-columns: 1fr;\r\n  grid-gap: 10px;\r\n}\r\n\r\n.pannel-field, .form-control {\r\n  background-color: #fff;\r\n  border-radius: 20px;\r\n  padding: 5px 4vw;\r\n  width: 100%;\r\n}\r\n\r\n/* .accept {\r\n  margin: 14px auto 0;\r\n} */\r\n\r\n#buttons-wrapper {\r\n  margin: 14px auto 0;\r\n}\r\n\r\n/* .btn.order {\r\n  background-color: #ca7641;;\r\n} */\r\n\r\n.btn.order {\r\n  background-color: #ca7641;\r\n}\r\n\r\n.btn:disabled {\r\n  background-color: #8b8b8b;\r\n  cursor: auto;\r\n}\r\n\r\n.pannel-field>.field-title, .form-control>label {\r\n  font-size: 1.4rem;\r\n  color: #555\r\n}\r\n\r\n.pannel-field>.data {\r\n  font-size: 1.7rem;\r\n  margin: 5px 0;\r\n}\r\n\r\n.options-pannel {\r\n  display: none;\r\n  justify-content: center;\r\n  align-items: flex-start;\r\n}\r\n\r\n.options.pannel-field {\r\n  display: none;\r\n}\r\n\r\n.close {\r\n  width: 30px;\r\n  height: 30px;\r\n  border-radius: 15px;\r\n  position: absolute;\r\n  top: -10px;\r\n  right: -10px;\r\n}\r\n\r\n.close-img {\r\n  width: 14px;\r\n  height: 14px;\r\n  position: absolute;\r\n  top: 50%;\r\n  left: 50%;\r\n  transform: translate(-50%, -50%);\r\n}\r\n\r\n.close.close-seats {\r\n  top: 0;\r\n  right: 0;\r\n}\r\n\r\n.option.origin:hover, .option.destination:hover {\r\n  cursor: pointer;\r\n  font-weight: 600;\r\n}\r\n\r\n/* calendar start*/\r\n\r\n.calendar {\r\n  padding: 0;\r\n  background-color: #fff;\r\n  border-radius: 20px;\r\n  width: 100%;\r\n  display: none;\r\n}\r\n\r\n.month {\r\n  width: 100%;\r\n  height: 4rem;\r\n  background-color: #01395e;\r\n  color: #fff;\r\n  display: flex;\r\n  justify-content: space-between;\r\n  align-items: center;\r\n  padding: 0 2rem;\r\n  text-align: center;\r\n  border-radius: 20px 20px 0 0;\r\n}\r\n\r\n.month i {\r\n  font-size: 2.5rem;\r\n  cursor: pointer;\r\n}\r\n\r\n.month h1 {\r\n  line-height: 4rem;\r\n  font-size: 1.7rem;\r\n  font-weight: 400;\r\n  text-transform: uppercase;\r\n  letter-spacing: 0.2rem;\r\n}\r\n\r\n.weekdays {\r\n  width: 100%;\r\n  height: 4rem;\r\n  padding: 0 0.4rem;\r\n  display: flex;\r\n  align-items: center;\r\n}\r\n\r\n.weekdays div {\r\n  font-size: 1.4rem;\r\n  font-weight: 400;\r\n  letter-spacing: 0.1rem;\r\n  width: calc((86vw - 42px) / 7);\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n}\r\n\r\n.days {\r\n  width: 100%;\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  justify-content: center;\r\n  padding: 0.2rem;\r\n}\r\n\r\n.days div {\r\n  font-size: 1.3rem;\r\n  margin: calc(1vw / 14);\r\n  width: calc((86vw - 54px) / 7);\r\n  height: calc((366px - 36px - 10px - 8rem) / 6);\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n  transition: background-color 0.2s;\r\n}\r\n\r\n.days div:hover:not(.prev-date):not(.next-date):not(.past-days), .days .chosen {\r\n  background-color: #01395e;\r\n  cursor: pointer;\r\n  color: #fff;\r\n}\r\n\r\n.prev-date,\r\n.next-date {\r\n  opacity: 0;\r\n}\r\n\r\n.past-days {\r\n  color: #bbb;\r\n}\r\n/* calendar end*/\r\n\r\n.passengers-container {\r\n  margin: 15px 0;\r\n  display: grid;\r\n  grid-template-columns: 1fr repeat(3, 15%);\r\n  grid-column-gap: 0px;\r\n  grid-row-gap: 10px;\r\n  font-size: 1.7rem\r\n}\r\n\r\n.passengers-container>* {\r\n  align-self: center\r\n}\r\n\r\n.passenger-type-info {\r\n  font-size: 1.2rem;\r\n  color: #777\r\n}\r\n\r\n.passenger-amount, .passenger-sign {\r\n  margin: 0 auto;\r\n  color: #01395e;\r\n}\r\n\r\n.passenger-amount {\r\n  font-size: 2rem;\r\n  font-weight: bold;\r\n}\r\n\r\n.accept-passengers {\r\n  grid-area: 4 / 1 / 5 / 5;\r\n  margin: 15px auto 0;\r\n}\r\n\r\n.weather-pannel {\r\n  height: 300px;\r\n  display: none;\r\n}\r\n\r\n.login-pannel {\r\n  background-color: #01395e;\r\n  display: none;\r\n}\r\n\r\n.form-control>input {\r\n  border: none;\r\n  font-size: 1.7rem;\r\n  font-family: 'Lato', sans-serif;\r\n  width: 100%;\r\n  margin: 5px 0;\r\n  outline: none;\r\n}\r\n\r\n.login-accept {\r\n  margin: 14px auto 0;\r\n  background-color: #206797\r\n}\r\n\r\n.login-error-text {\r\n  margin: 20px auto;\r\n  font-size: 1.6rem;\r\n  color: #ca7641;\r\n  text-align: center;\r\n  display: none;\r\n}\r\n\r\n.airplane {\r\n  width: 100%;\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  overflow-y: scroll;\r\n  display: none;\r\n}\r\n\r\n#airplane-svg {\r\n  height: 750px;\r\n  width: 100%;\r\n  margin: 0 auto;\r\n}\r\n\r\n.seat:hover {\r\n  cursor: pointer;\r\n}\r\n\r\n[id=384617]>rect {\r\n  fill: #ff00ff;\r\n}\r\n\r\ninput:-webkit-autofill {\r\n  -webkit-box-shadow: 0 0 0px 1000px #fff inset;\r\n}\r\n\r\ninput.empty:-webkit-autofill {\r\n  -webkit-box-shadow: 0 0 0px 1000px #e9af8b inset;\r\n}\r\n\r\n@media only screen and (max-width: 1400px) and (min-width: 800px) {\r\n  html {\r\n    font-size: 8px;\r\n  }\r\n}\r\n\r\n@media only screen and (min-width: 800px) {\r\n  body {\r\n    height: 100vh;\r\n  }\r\n  nav {\r\n    padding: 2vh 3vw;\r\n  }\r\n\r\n  .logo img {\r\n    height: 60px;\r\n  }\r\n\r\n  .logo h1 {\r\n    font-size: 2.8rem;\r\n  }\r\n\r\n  .btn-login {\r\n    border-radius: 25px;\r\n    width: 150px;\r\n    height: 50px;\r\n    font-size: 2rem;\r\n  }\r\n\r\n  .main-container {\r\n    top: 150px;\r\n  }\r\n\r\n  .wrapper {\r\n    width: 20vw;\r\n    padding: 18px 1.2vw;\r\n    border-radius: 25px;\r\n  }\r\n  \r\n  .pannel-field, .form-control {\r\n    border-radius: 25px;\r\n    padding: 5px 1.8vw;\r\n  }\r\n\r\n  .calendar {\r\n    padding: 0;\r\n    border-radius: 25px;\r\n  }\r\n\r\n  .weekdays div {\r\n    width: calc((20vw - 2.4vw - 2px) / 7);\r\n  }\r\n\r\n  .days div {\r\n    margin: 0.1rem;\r\n    width: calc((20vw - 2.4vw - 2px - 2rem) / 7);\r\n    height: calc((366px - 36px - 16px - 8rem) / 6);\r\n  }\r\n\r\n  .search-pannel {\r\n    left: 0;\r\n  }\r\n\r\n  .options-pannel {\r\n    left: 20.5vw;\r\n  }\r\n\r\n  /* .weather-pannel {\r\n    left: 0;\r\n  } */\r\n\r\n  .login-pannel {\r\n    left: 68vw;\r\n  }\r\n\r\n  .airplane {\r\n    width: 20vw;\r\n    left: 20.5vw;\r\n    overflow-y: auto;\r\n  }\r\n\r\n  #airplane-svg {\r\n    height: 700px;\r\n  }\r\n}"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+/* 9 */
 /***/ ((module) => {
 
-function sum(a,b) {
-  return a + b;
-}
 
-module.exports = {
-  sum
+
+module.exports = function (item) {
+  var content = item[1];
+  var cssMapping = item[3];
+
+  if (!cssMapping) {
+    return content;
+  }
+
+  if (typeof btoa === "function") {
+    var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(cssMapping))));
+    var data = "sourceMappingURL=data:application/json;charset=utf-8;base64,".concat(base64);
+    var sourceMapping = "/*# ".concat(data, " */");
+    var sourceURLs = cssMapping.sources.map(function (source) {
+      return "/*# sourceURL=".concat(cssMapping.sourceRoot || "").concat(source, " */");
+    });
+    return [content].concat(sourceURLs).concat([sourceMapping]).join("\n");
+  }
+
+  return [content].join("\n");
 };
 
 /***/ }),
+/* 10 */
+/***/ ((module) => {
 
-/***/ "./src/images/background_image.jpg":
-/*!*****************************************!*\
-  !*** ./src/images/background_image.jpg ***!
-  \*****************************************/
+
+
+/*
+  MIT License http://www.opensource.org/licenses/mit-license.php
+  Author Tobias Koppers @sokra
+*/
+module.exports = function (cssWithMappingToString) {
+  var list = []; // return the list of modules as css string
+
+  list.toString = function toString() {
+    return this.map(function (item) {
+      var content = "";
+      var needLayer = typeof item[5] !== "undefined";
+
+      if (item[4]) {
+        content += "@supports (".concat(item[4], ") {");
+      }
+
+      if (item[2]) {
+        content += "@media ".concat(item[2], " {");
+      }
+
+      if (needLayer) {
+        content += "@layer".concat(item[5].length > 0 ? " ".concat(item[5]) : "", " {");
+      }
+
+      content += cssWithMappingToString(item);
+
+      if (needLayer) {
+        content += "}";
+      }
+
+      if (item[2]) {
+        content += "}";
+      }
+
+      if (item[4]) {
+        content += "}";
+      }
+
+      return content;
+    }).join("");
+  }; // import a list of modules into the list
+
+
+  list.i = function i(modules, media, dedupe, supports, layer) {
+    if (typeof modules === "string") {
+      modules = [[null, modules, undefined]];
+    }
+
+    var alreadyImportedModules = {};
+
+    if (dedupe) {
+      for (var k = 0; k < this.length; k++) {
+        var id = this[k][0];
+
+        if (id != null) {
+          alreadyImportedModules[id] = true;
+        }
+      }
+    }
+
+    for (var _k = 0; _k < modules.length; _k++) {
+      var item = [].concat(modules[_k]);
+
+      if (dedupe && alreadyImportedModules[item[0]]) {
+        continue;
+      }
+
+      if (typeof layer !== "undefined") {
+        if (typeof item[5] === "undefined") {
+          item[5] = layer;
+        } else {
+          item[1] = "@layer".concat(item[5].length > 0 ? " ".concat(item[5]) : "", " {").concat(item[1], "}");
+          item[5] = layer;
+        }
+      }
+
+      if (media) {
+        if (!item[2]) {
+          item[2] = media;
+        } else {
+          item[1] = "@media ".concat(item[2], " {").concat(item[1], "}");
+          item[2] = media;
+        }
+      }
+
+      if (supports) {
+        if (!item[4]) {
+          item[4] = "".concat(supports);
+        } else {
+          item[1] = "@supports (".concat(item[4], ") {").concat(item[1], "}");
+          item[4] = supports;
+        }
+      }
+
+      list.push(item);
+    }
+  };
+
+  return list;
+};
+
+/***/ }),
+/* 11 */
+/***/ ((module) => {
+
+
+
+module.exports = function (url, options) {
+  if (!options) {
+    options = {};
+  }
+
+  if (!url) {
+    return url;
+  }
+
+  url = String(url.__esModule ? url.default : url); // If url is already wrapped in quotes, remove them
+
+  if (/^['"].*['"]$/.test(url)) {
+    url = url.slice(1, -1);
+  }
+
+  if (options.hash) {
+    url += options.hash;
+  } // Should url be wrapped?
+  // See https://drafts.csswg.org/css-values-3/#urls
+
+
+  if (/["'() \t\n]|(%20)/.test(url) || options.needQuotes) {
+    return "\"".concat(url.replace(/"/g, '\\"').replace(/\n/g, "\\n"), "\"");
+  }
+
+  return url;
+};
+
+/***/ }),
+/* 12 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 module.exports = __webpack_require__.p + "images/background_image.jpg";
 
 /***/ }),
-
-/***/ "./src/images/logo.png":
-/*!*****************************!*\
-  !*** ./src/images/logo.png ***!
-  \*****************************/
+/* 13 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 module.exports = __webpack_require__.p + "images/logo.png";
 
 /***/ }),
-
-/***/ "./src/images/logo_long.png":
-/*!**********************************!*\
-  !*** ./src/images/logo_long.png ***!
-  \**********************************/
+/* 14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-"use strict";
 module.exports = __webpack_require__.p + "images/logo_long.png";
 
-/***/ })
+/***/ }),
+/* 15 */
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-/******/ 	});
+module.exports = __webpack_require__.p + "images/close.png";
+
+/***/ })
+/******/ 	]);
 /************************************************************************/
 /******/ 	// The module cache
 /******/ 	var __webpack_module_cache__ = {};
@@ -743,7 +664,7 @@ module.exports = __webpack_require__.p + "images/logo_long.png";
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
-/******/ 			"main": 0
+/******/ 			0: 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -763,68 +684,84 @@ module.exports = __webpack_require__.p + "images/logo_long.png";
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be in strict mode.
+// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
-"use strict";
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _css_index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./css/index.css */ "./src/css/index.css");
-/* harmony import */ var _images_logo_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./images/logo.png */ "./src/images/logo.png");
-/* harmony import */ var _images_logo_long_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./images/logo_long.png */ "./src/images/logo_long.png");
+/* harmony import */ var _css_index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
+/* harmony import */ var _images_logo_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(13);
+/* harmony import */ var _images_logo_long_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(14);
+/* harmony import */ var _images_close_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(15);
 
 
 
-// import closeIcon from "./images/close.png"
-const sum = (__webpack_require__(/*! ./sum */ "./src/sum.js").sum);
 
-console.log(sum(10,5));
 
-// set logo
-const logoWrapper = document.querySelector('.logo>picture');
-const mainLogoLong = document.createElement("source");
-mainLogoLong.srcset = _images_logo_long_png__WEBPACK_IMPORTED_MODULE_2__;
-mainLogoLong.media = "(min-width: 600px)";
-logoWrapper.appendChild(mainLogoLong);
-const mainLogo = new Image();
-mainLogo.src = _images_logo_png__WEBPACK_IMPORTED_MODULE_1__;
-mainLogo.alt = "logo";
-logoWrapper.appendChild(mainLogo);
-// set icon
-// const closeImg = document.querySelector('.close-img');
-// closeImg.src = closeIcon
-// -----
+const wrapperSearch = document.querySelector('.search-pannel');
+const wrapperOptions = document.querySelector('.options-pannel');
+const wrapperWeather = document.querySelector('.wrapper.weather');
+const wrapperLogin = document.querySelector('.login-pannel');
 
-const windowInnerWidth = window.innerWidth
-const windowInnerHeight = window.innerHeight
+const searchFieldOrigin = document.querySelector('.search.pannel-field.origin');
+const searchFieldDestination = document.querySelector('.search.pannel-field.destination');
+const searchFieldDate = document.querySelector('.search.pannel-field.date');
+const searchFieldPassengers = document.querySelector('.search.pannel-field.passengers');
 
-const wrapperSearch = document.querySelector('.search-pannel')
-const wrapperOptions = document.querySelector('.options-pannel')
-const wrapperWeather = document.querySelector('.wrapper.weather')
+const originDataField = searchFieldOrigin.querySelector('.origin.data');
+const destinationDataField = searchFieldDestination.querySelector('.destination.data');
+const dateDataField = searchFieldDate.querySelector('.date.data');
+const passengersDataField = searchFieldPassengers.querySelector('.passengers.data');
 
-const searchFieldOrigin = document.querySelector('.search.pannel-field.origin')
-const searchFieldDestination = document.querySelector('.search.pannel-field.destination')
-const searchFieldDate = document.querySelector('.search.pannel-field.date')
-const searchFieldPassengers = document.querySelector('.search.pannel-field.passengers')
+const optionsFields = [...document.querySelectorAll('.options.pannel-field'), document.querySelector('.calendar')];
+const optionsFieldOrigin = document.querySelector('.options.pannel-field.origin');
+const optionsFieldDestination = document.querySelector('.options.pannel-field.destination');
+const optionsFieldDate = document.querySelector('.calendar');
+const optionsFieldPassengers = document.querySelector('.options.pannel-field.passengers');
 
-const optionsFields = document.querySelectorAll('.options.pannel-field')
-const optionsFieldOrigin = document.querySelector('.options.pannel-field.origin')
-const optionsFieldDestination = document.querySelector('.options.pannel-field.destination')
-const optionsFieldPassengers = document.querySelector('.options.pannel-field.passengers')
+const optionOrigin = document.querySelector('.option.data.origin');
+const optionsDestination = [...document.querySelectorAll('.option.data.destination')];
 
-const btnAccept = document.querySelector('.btn.accept')
-const btnClose = document.querySelector('.btn.close')
+const optionsPassengersContainer = document.querySelector('.passengers-container');
+const optionsPassengersSign = [...optionsPassengersContainer.querySelectorAll('.fas')];
+const optionsPassengersAmount = [...optionsPassengersContainer.querySelectorAll('.passenger-amount')];
+const optionsPassengersAcceptBtn = document.querySelector('.accept-passengers');
 
-// wrapperOptions.style.height = wrapperSearch.offsetHeight
+const loginForm = document.getElementById('form');
+const loginUsernameInput = document.getElementById('username');
+const loginUsernameDiv = document.querySelector(".form-control.username");
+const loginPasswordInput = document.getElementById('password');
+const loginPasswordDiv = document.querySelector(".form-control.password");
+const loginErrorText = document.querySelector(".login-error-text");
+
+const airplaneSection = document.querySelector(".airplane");
+
+const btnLogin = document.querySelector('.btn.login');
+const btnOrder = document.querySelector('.btn.order');
+const btnLoginAccept = document.querySelector('.btn.login-accept');
+const btnSeats = document.querySelector('.btn.seats');
+const btnsWrapper = document.querySelector('#buttons-wrapper');
+
+const prevMonthArrow = document.querySelector(".prev")
+const nextMonthArrow = document.querySelector(".next")
+
+let origin;
+let destination;
+let flightDate;
+let adults = 1;
+let children = 0;
+let infants = 0;
+let login = false;
+let accepted = false
+
+const date = new Date();
+
 
 function searchPannelVisibility() {
-  if (windowInnerWidth <= 800) {
+  if (window.innerWidth <= 800) {
     wrapperSearch.style.display = 'none'
   }
 }
 function onOption() {
-  wrapperOptions.style.height = wrapperSearch.offsetHeight + 'px';
+  airplaneSection.style.display = 'none'
   wrapperOptions.style.display = 'block';
   searchPannelVisibility();
   optionsFields.forEach(option => option.style.display = 'none')
@@ -847,26 +784,331 @@ function onDate() {
 
 function onPassengers() {
   onOption()
-  // optionsFieldDestination.style.display = 'block'
+  optionsFieldPassengers.style.display = 'block'
 }
 
-function onOptionsClose(event) {
-  if (event.target.closest('.btn.close')) {
-    wrapperOptions.style.display = 'none';
-    wrapperSearch.style.display = 'grid'
+function onOptionOrigin(event) {
+  origin = event.target.innerText
+  originDataField.innerText = origin
+  setColor(searchFieldOrigin, 'valid', false)
+  closeOptions()
+}
+
+function onOptionDestination(event) {
+  destination = event.target.innerText
+  destinationDataField.innerText = destination
+  setColor(searchFieldDestination, 'valid', false)
+  closeOptions()
+}
+
+function renderCalendar() {
+  date.setDate(1);
+
+  const monthDays = document.querySelector(".days");
+
+  const lastDay = new Date(
+    date.getFullYear(),
+    date.getMonth() + 1,
+    0
+  ).getDate();
+
+  const prevLastDay = new Date(
+    date.getFullYear(),
+    date.getMonth(),
+    0
+  ).getDate();
+
+  const firstDayIndex = date.getDay();
+
+  const lastDayIndex = new Date(
+    date.getFullYear(),
+    date.getMonth() + 1,
+    0
+  ).getDay();
+
+  const nextDays = 7 - lastDayIndex;
+
+  const months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
+
+  document.querySelector(".date h1").innerHTML = months[date.getMonth()];
+
+  // document.querySelector(".date p").innerHTML = new Date().toDateString();
+
+  let days = "";
+
+  let dayIdx
+  firstDayIndex === 0 ? dayIdx = 7 : dayIdx = firstDayIndex
+  for (let x = dayIdx; x > 1; x--) {
+    days += `<div class="prev-date">${prevLastDay - x + 2}</div>`;
   }
-  if (windowInnerWidth <= 800 && !event.target.closest(".main-container")) {
-    wrapperOptions.style.display = 'none';
-    wrapperSearch.style.display = 'grid'
+
+  for (let i = 1; i <= lastDay; i++) {
+    if (
+      (i < new Date().getDate() &&
+      date.getMonth() === new Date().getMonth()) ||
+      (date.getMonth() < new Date().getMonth() && date.getFullYear() == new Date().getFullYear()) ||
+      (date.getFullYear() < new Date().getFullYear())
+    ) {
+      days += `<div class="past-days">${i}</div>`;
+    } else {
+      days += `<div class="possible-days" data-month="${date.getMonth()}" data-year="${date.getFullYear()}" data-day="${i}">${i}</div>`;
+    }
+  }
+
+  for (let j = 1; j <= nextDays; j++) {
+    days += `<div class="next-date">${j}</div>`;
+  }
+  monthDays.innerHTML = days;
+
+  const optionsDatePossibleDays = [...document.querySelectorAll('.possible-days')];
+  optionsDatePossibleDays.forEach(day => day.addEventListener('click', onOptionDate))
+};
+
+function onOptionDate(event) {
+    let day = event.target.dataset.day
+    let month = event.target.dataset.month
+    let year = event.target.dataset.year
+    dateDataField.innerText = `${day < 10 ? '0' + day : day}/${month < 9 ? '0' + (+month + 1) : (month + 1)}/${year}`
+    flightDate = dateDataField.innerText
+    setColor(searchFieldDate, 'valid', false)
+    const daysDivs = [...document.querySelectorAll('.days>div')];
+    daysDivs.forEach(day => day.classList.remove('chosen'))
+    event.target.classList.add('chosen')
+    closeOptions()
+}
+
+function onOptionPassenger(event) {
+  let type = event.target.dataset.type
+  let sign = event.target.dataset.sign
+  optionsPassengersAmount.map(item => {
+    if (item.classList.contains(type)) {
+      let num = +(item.innerText)
+      if (sign === 'plus' && num < 10) {
+        if (type === 'adults') {
+          ++adults
+          item.innerText = adults
+        }
+        if (type === 'children') {
+          ++children
+          item.innerText = children
+        }
+        if (type === 'infants') {
+          if (infants < adults) {
+            ++infants
+          }
+          item.innerText = infants
+        }
+      }
+      else if (sign === 'minus' && num > 0) {
+        if (type === 'adults' && num > 1 && adults > infants) {
+          --adults
+          item.innerText = adults
+        }
+        if (type === 'children') {
+          --children
+          item.innerText = children
+        }
+        if (type === 'infants') {
+          --infants
+          item.innerText = infants
+        }
+      }
+    }
+  })
+
+  if (children > 0 && infants > 0) {
+    btnsWrapper.style.marginTop = '0'
+  } else {
+    btnsWrapper.style.marginTop = '14px'
+  }
+
+  let adultsTip = adults > 1 ? 's' : ''
+  let childrenTip = children > 1 ? 'ren' : ''
+  let infantsTip = infants > 1 ? 's' : ''
+  let text = `${adults} Adult${adultsTip}${children > 0 ? (', ' + children + ' Child' + childrenTip) : ''}${infants > 0 ? (', ' + infants + ' Infant' + infantsTip) : ''}`
+  passengersDataField.innerText = text
+}
+
+function onWrapperClose(event) {
+  if (wrapperOptions.style.display == 'block') {
+    if (event.target.closest('.btn.close-options')) {
+      closeOptions()
+    }
+    if (window.innerWidth <= 800 && !event.target.closest(".main-container")) {
+      closeOptions()
+    }
+  }
+  if (wrapperLogin.style.display == 'block') {
+    if (event.target.closest('.btn.close-login')) {
+      closeLogin()
+    }
+    if (window.innerWidth <= 800 && !event.target.closest(".main-container") && !event.target.closest(".login")) {
+      closeLogin()
+    }
+  }
+  if (airplaneSection.style.display == 'block') {
+    if (event.target.closest('.btn.close-seats')) {
+      closeSeats()
+    }
+    if (window.innerWidth <= 800 && !event.target.closest(".main-container")) {
+      closeSeats()
+    }
   }
 }
 
+function closeOptions() {
+  wrapperOptions.style.display = 'none';
+  wrapperSearch.style.display = 'grid'
+}
 
-document.addEventListener('click', onOptionsClose)
+function closeSeats() {
+  airplaneSection.style.display = 'none';
+  wrapperSearch.style.display = 'grid'
+}
+
+function setColor(target, validator, isForm) {
+  if (validator == 'valid') {
+    target.style.backgroundColor = "#fff";
+    if (isForm) {
+      target.classList.remove('empty')
+      target.parentElement.style.backgroundColor = "#fff";
+    }
+  } else if (validator == 'invalid') {
+    target.style.backgroundColor = "#e9af8b";
+    if (isForm) {
+      target.classList.add('empty')
+      target.parentElement.style.backgroundColor = "#e9af8b";
+    }
+  }
+}
+
+function closeLogin() {
+  wrapperLogin.style.display = 'none';
+  wrapperSearch.style.display = 'grid';
+  loginForm.reset()
+  loginErrorText.style.display = 'none';
+  setColor(loginPasswordInput, 'valid', true)
+  setColor(loginUsernameInput, 'valid', true)
+}
+
+function onLoginButton() {
+  if (login == false) {
+    wrapperLogin.style.display = 'block'
+    searchPannelVisibility();
+  }
+  else {
+    btnLogin.innerText = 'Login'
+    login = false
+  }
+}
+
+function onLoginAcceptButton(event) {
+  event.preventDefault();
+  const username = loginUsernameInput.value;
+  const password = loginPasswordInput.value;
+  if (loginUsernameInput.value == "") {
+    setColor(loginUsernameInput, 'invalid', true)
+  }
+  if (loginPasswordInput.value == "") {
+    setColor(loginPasswordInput, 'invalid', true)
+  }
+
+  fetch(`https://gist.githubusercontent.com/MalgorzataKowalik/039b073fd0fa4da4e19aeecd4f09e5b5/raw/4a95f8643267a967a4402f4887a17459a9939c13/passwords.json`)
+  .then(res => res.json())
+  .then(data => {
+    const users = data.users
+    users.forEach(user => {
+      if (username == user.username && password == user.password) {
+        btnLogin.innerText = 'Logout';
+        login = true;
+        closeLogin()
+      }
+      else if (username != '' && password != '') {
+        loginErrorText.style.display = 'block'
+      }
+    })
+  })
+}
+
+function onEmptyValue(event) {
+  if (event.target.value == "") {
+    setColor(this, 'invalid', true)
+  } 
+  else {
+    setColor(this, 'valid', true)
+    loginErrorText.style.display = 'none'
+  }
+}
+
+function onOrderButton() {
+  let originSet = checkIfValueSet(origin, searchFieldOrigin)
+  let destinationSet = checkIfValueSet(destination, searchFieldDestination)
+  let flightDateSet = checkIfValueSet(flightDate, searchFieldDate)
+  if (originSet && destinationSet && flightDateSet) {
+    closeOptions()
+    accepted = true
+    if (login == false) {
+      wrapperLogin.style.display = 'block'
+      searchPannelVisibility();
+    }
+  }
+}
+
+function onSeatsButton() {
+  closeOptions()
+  searchPannelVisibility();
+  airplaneSection.style.display = 'block'
+}
+
+function checkIfValueSet(item, itemElement) {
+  if (item == undefined) {
+    setColor(itemElement, 'invalid', false);
+    return false
+  } else {
+    return true
+  };
+}
+
+document.addEventListener('click', onWrapperClose)
 searchFieldOrigin.addEventListener('click', onOrigin)
 searchFieldDestination.addEventListener('click', onDestination)
 searchFieldDate.addEventListener('click', onDate)
 searchFieldPassengers.addEventListener('click', onPassengers)
+optionOrigin.addEventListener('click', onOptionOrigin)
+optionsDestination.forEach(option => option.addEventListener('click', onOptionDestination))
+optionsPassengersSign.forEach(sign => sign.addEventListener('click', onOptionPassenger))
+optionsPassengersAcceptBtn.addEventListener('click', closeOptions)
+btnLogin.addEventListener('click', onLoginButton)
+btnLoginAccept.addEventListener('click', onLoginAcceptButton)
+loginUsernameInput.addEventListener('input', onEmptyValue)
+loginPasswordInput.addEventListener('input', onEmptyValue)
+btnOrder.addEventListener('click', onOrderButton)
+btnSeats.addEventListener('click', onSeatsButton)
+
+prevMonthArrow.addEventListener("click", () => {
+  date.setMonth(date.getMonth() - 1);
+  renderCalendar();
+})
+nextMonthArrow.addEventListener('click', () => {
+  date.setMonth(date.getMonth() + 1);
+  renderCalendar();
+});
+
+renderCalendar()
+
 })();
 
 /******/ })()

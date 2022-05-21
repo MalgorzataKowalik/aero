@@ -2,6 +2,9 @@ import style from "./css/index.css"
 import Logo from "./images/logo.png"
 import LogoLong from "./images/logo_long.png"
 import closeIcon from "./images/close.png"
+const lightOrange = '#e9af8b'
+const darkBlue = '#01395e'
+const lightBlue = '#43a9c7'
 
 const wrapperSearch = document.querySelector('.search-pannel');
 const wrapperOptions = document.querySelector('.options-pannel');
@@ -39,11 +42,13 @@ const loginPasswordInput = document.getElementById('password');
 const loginPasswordDiv = document.querySelector(".form-control.password");
 const loginErrorText = document.querySelector(".login-error-text");
 
+const airplaneSection = document.querySelector(".airplane");
+const availableSeats = [...document.querySelectorAll('.seat')];
+
 const btnLogin = document.querySelector('.btn.login');
-const btnAccept = document.querySelector('.btn.accept');
-const btnLoginAccept = document.querySelector('.btn.login-accept');
-const btnChange = document.querySelector('.btn.change');
 const btnOrder = document.querySelector('.btn.order');
+const btnLoginAccept = document.querySelector('.btn.login-accept');
+const btnSeats = document.querySelector('.btn.seats');
 const btnsWrapper = document.querySelector('#buttons-wrapper');
 
 const prevMonthArrow = document.querySelector(".prev")
@@ -57,6 +62,7 @@ let children = 0;
 let infants = 0;
 let login = false;
 let accepted = false
+let selectedSeats = []
 
 const date = new Date();
 
@@ -67,11 +73,10 @@ function searchPannelVisibility() {
   }
 }
 function onOption() {
-  if (!accepted) {
-    wrapperOptions.style.display = 'block';
-    searchPannelVisibility();
-    optionsFields.forEach(option => option.style.display = 'none')
-  }
+  airplaneSection.style.display = 'none'
+  wrapperOptions.style.display = 'block';
+  searchPannelVisibility();
+  optionsFields.forEach(option => option.style.display = 'none')
 }
 
 function onOrigin() {
@@ -237,9 +242,9 @@ function onOptionPassenger(event) {
   })
 
   if (children > 0 && infants > 0) {
-    btnAccept.style.marginTop = '0'
+    btnsWrapper.style.marginTop = '0'
   } else {
-    btnAccept.style.marginTop = '14px'
+    btnsWrapper.style.marginTop = '14px'
   }
 
   let adultsTip = adults > 1 ? 's' : ''
@@ -266,10 +271,24 @@ function onWrapperClose(event) {
       closeLogin()
     }
   }
+  if (airplaneSection.style.display == 'block') {
+    if (event.target.closest('.btn.close-seats')) {
+      closeSeats()
+    }
+    if (window.innerWidth <= 800 && !event.target.closest(".main-container")) {
+      closeSeats()
+    }
+  }
 }
 
 function closeOptions() {
   wrapperOptions.style.display = 'none';
+  wrapperSearch.style.display = 'grid';
+  checkOrderAvailability()
+}
+
+function closeSeats() {
+  airplaneSection.style.display = 'none';
   wrapperSearch.style.display = 'grid'
 }
 
@@ -281,10 +300,10 @@ function setColor(target, validator, isForm) {
       target.parentElement.style.backgroundColor = "#fff";
     }
   } else if (validator == 'invalid') {
-    target.style.backgroundColor = "#e9af8b";
+    target.style.backgroundColor = lightOrange;
     if (isForm) {
       target.classList.add('empty')
-      target.parentElement.style.backgroundColor = "#e9af8b";
+      target.parentElement.style.backgroundColor = lightOrange;
     }
   }
 }
@@ -328,6 +347,7 @@ function onLoginAcceptButton(event) {
       if (username == user.username && password == user.password) {
         btnLogin.innerText = 'Logout';
         login = true;
+        checkOrderAvailability()
         closeLogin()
       }
       else if (username != '' && password != '') {
@@ -347,29 +367,64 @@ function onEmptyValue(event) {
   }
 }
 
-function onAcceptButton() {
-  let originSet = checkIfValueSet(origin, searchFieldOrigin)
-  let destinationSet = checkIfValueSet(destination, searchFieldDestination)
-  let flightDateSet = checkIfValueSet(flightDate, searchFieldDate)
-  if (originSet && destinationSet && flightDateSet) {
-    closeOptions()
-    accepted = true
-    btnsWrapper.style.display = 'block'
-    btnAccept.style.display = 'none'
-    if (login == false) {
-      wrapperLogin.style.display = 'block'
-      searchPannelVisibility();
-    }
+// function onOrderButton() {
+//   let originSet = checkIfValueSet(origin, searchFieldOrigin)
+//   let destinationSet = checkIfValueSet(destination, searchFieldDestination)
+//   let flightDateSet = checkIfValueSet(flightDate, searchFieldDate)
+//   if (originSet && destinationSet && flightDateSet) {
+//     closeOptions()
+//     accepted = true
+//     if (login == false) {
+//       wrapperLogin.style.display = 'block'
+//       searchPannelVisibility();
+//     }
+//   }
+// }
+
+function checkOrderAvailability() {
+  let originSet = checkIfValueSet(origin)
+  let destinationSet = checkIfValueSet(destination)
+  let flightDateSet = checkIfValueSet(flightDate)
+  let seatsSet = (selectedSeats.length == adults + children)
+  if (originSet && destinationSet && flightDateSet && seatsSet && login) {
+    btnOrder.disabled = false
+  }
+  else {
+    btnOrder.disabled = true
   }
 }
 
-function checkIfValueSet(item, itemElement) {
+function onSeatsButton() {
+  closeOptions()
+  searchPannelVisibility();
+  airplaneSection.style.display = 'block'
+}
+
+function checkIfValueSet(item) {
   if (item == undefined) {
-    setColor(itemElement, 'invalid', false);
     return false
   } else {
     return true
   };
+}
+
+function onSeat(e) {
+  if (!this.classList.contains('selected')) {
+    if (selectedSeats.length < adults + children) {
+      this.classList.add('selected')
+      e.target.style.fill = darkBlue
+      selectedSeats.push(this)
+    }
+  }
+  else {
+    e.target.style.fill = lightBlue
+    selectedSeats.forEach((seat, index) => {
+      if (seat.parentElement.id == this.parentElement.id) {
+        selectedSeats.splice(index, 1)
+      }
+    })
+  }
+  checkOrderAvailability()
 }
 
 document.addEventListener('click', onWrapperClose)
@@ -385,7 +440,9 @@ btnLogin.addEventListener('click', onLoginButton)
 btnLoginAccept.addEventListener('click', onLoginAcceptButton)
 loginUsernameInput.addEventListener('input', onEmptyValue)
 loginPasswordInput.addEventListener('input', onEmptyValue)
-btnAccept.addEventListener('click', onAcceptButton)
+// btnOrder.addEventListener('click', onOrderButton)
+btnSeats.addEventListener('click', onSeatsButton)
+availableSeats.forEach(seat => seat.addEventListener('click', onSeat))
 
 prevMonthArrow.addEventListener("click", () => {
   date.setMonth(date.getMonth() - 1);
