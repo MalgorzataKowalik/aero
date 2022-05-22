@@ -20,6 +20,7 @@ const originDataField = searchFieldOrigin.querySelector('.origin.data');
 const destinationDataField = searchFieldDestination.querySelector('.destination.data');
 const dateDataField = searchFieldDate.querySelector('.date.data');
 const passengersDataField = searchFieldPassengers.querySelector('.passengers.data');
+const totalPriceElement = document.querySelector('.price>span');
 
 const optionsFields = [...document.querySelectorAll('.options.pannel-field'), document.querySelector('.calendar')];
 const optionsFieldOrigin = document.querySelector('.options.pannel-field.origin');
@@ -63,6 +64,8 @@ let infants = 0;
 let login = false;
 let accepted = false
 let selectedSeats = []
+let ticketPrice = 0
+let totalPrice = 0
 
 const date = new Date();
 
@@ -101,6 +104,7 @@ function onPassengers() {
 
 function onOptionOrigin(event) {
   origin = event.target.innerText
+  if (destination) setTotalPrice()
   originDataField.innerText = origin
   setColor(searchFieldOrigin, 'valid', false)
   closeOptions()
@@ -108,6 +112,8 @@ function onOptionOrigin(event) {
 
 function onOptionDestination(event) {
   destination = event.target.innerText
+  ticketPrice = Number(event.target.dataset.price)
+  if (origin) setTotalPrice()
   destinationDataField.innerText = destination
   setColor(searchFieldDestination, 'valid', false)
   closeOptions()
@@ -237,11 +243,16 @@ function onOptionPassenger(event) {
           --infants
           item.innerText = infants
         }
+        if (selectedSeats.length > 0) {
+          const deletedSeat = selectedSeats.pop()
+          deletedSeat.style.fill = lightBlue
+        }
       }
     }
   })
+  if (origin && destination) setTotalPrice()
 
-  if (children > 0 && infants > 0) {
+  if (children > 0 && infants > 0 && (adults > 9 || children > 9)) {
     btnsWrapper.style.marginTop = '0'
   } else {
     btnsWrapper.style.marginTop = '14px'
@@ -252,6 +263,7 @@ function onOptionPassenger(event) {
   let infantsTip = infants > 1 ? 's' : ''
   let text = `${adults} Adult${adultsTip}${children > 0 ? (', ' + children + ' Child' + childrenTip) : ''}${infants > 0 ? (', ' + infants + ' Infant' + infantsTip) : ''}`
   passengersDataField.innerText = text
+  checkOrderAvailability()
 }
 
 function onWrapperClose(event) {
@@ -418,6 +430,7 @@ function onSeat(e) {
   }
   else {
     e.target.style.fill = lightBlue
+    this.classList.remove('selected')
     selectedSeats.forEach((seat, index) => {
       if (seat.parentElement.id == this.parentElement.id) {
         selectedSeats.splice(index, 1)
@@ -425,6 +438,11 @@ function onSeat(e) {
     })
   }
   checkOrderAvailability()
+}
+
+function setTotalPrice() {
+  totalPrice = Math.round(ticketPrice * (adults + 0.8 * children))
+  totalPriceElement.textContent = totalPrice
 }
 
 document.addEventListener('click', onWrapperClose)
