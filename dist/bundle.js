@@ -356,7 +356,7 @@ var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBP
 ___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Marmelad&display=swap);"]);
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "* {\r\n  margin: 0;\r\n  padding: 0;\r\n  box-sizing: border-box;\r\n}\r\n\r\nhtml {\r\n  font-size: 10px;\r\n  font-family: 'Lato', sans-serif;\r\n}\r\n\r\nbody {\r\n  width: 100%;\r\n  height: 870px;\r\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\r\n  background-repeat: no-repeat;\r\n  background-size: cover;\r\n  background-position: center;\r\n}\r\n\r\n/* .background-image {\r\n  width: 100%;\r\n  height: 100%;\r\n  position: fixed;\r\n  top: 0;\r\n  left: 0;\r\n  background-image: url('../images/background_image.jpg');\r\n  background-repeat: no-repeat;\r\n  background-size: cover;\r\n  background-position: center;\r\n  z-index: -1;\r\n} */\r\n\r\nnav {\r\n  width: 100%;\r\n  padding: 2vh 6vw;\r\n  background: rgba(255, 255, 255, 0.4);\r\n  display: flex;\r\n  justify-content: space-between;\r\n  align-items: center;\r\n}\r\n\r\n.logo {\r\n  max-width: 50%;\r\n  display: flex;\r\n  justify-content: flex-start;\r\n  align-items: center;\r\n}\r\n\r\n.logo img {\r\n  height: 50px;\r\n  width: auto;\r\n  margin-right: 10px;\r\n}\r\n\r\n.logo h1 {\r\n  font-family: 'Marmelad', sans-serif;\r\n  color: #01395e;\r\n  font-size: 2.4rem;\r\n}\r\n\r\n.btn {\r\n  border: none;\r\n  border-radius: 20px;\r\n  width: 120px;\r\n  height: 40px;\r\n  background-color: #01395e;\r\n  color: #fff;\r\n  font-family: 'Lato', sans-serif;\r\n  font-size: 1.7rem;\r\n}\r\n\r\n.hover-pointer:hover {\r\n  cursor: pointer;\r\n}\r\n\r\n.main-container {\r\n  width: 88vw;\r\n  position: absolute;\r\n  top: 100px;\r\n  left: 6vw;\r\n}\r\n\r\n.wrapper {\r\n  background-color: rgba(255, 255, 255, 0.4);\r\n  width: 100%;\r\n  height: 366px;\r\n  padding: 18px 20px;\r\n  border-radius: 20px;\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n}\r\n\r\n.search-pannel, .form {\r\n  display: grid;\r\n  grid-template-columns: 1fr;\r\n  grid-gap: 10px;\r\n}\r\n\r\n.pannel-field, .form-control {\r\n  background-color: #fff;\r\n  border-radius: 20px;\r\n  padding: 5px 4vw;\r\n  width: 100%;\r\n}\r\n\r\n/* .accept {\r\n  margin: 14px auto 0;\r\n} */\r\n\r\n#buttons-wrapper {\r\n  margin: 14px auto 0;\r\n}\r\n\r\n/* .btn.order {\r\n  background-color: #ca7641;;\r\n} */\r\n\r\n.btn.order {\r\n  background-color: #ca7641;\r\n}\r\n\r\n.btn:disabled {\r\n  background-color: #8b8b8b;\r\n  cursor: auto;\r\n}\r\n\r\n.pannel-field>.field-title, .form-control>label {\r\n  font-size: 1.4rem;\r\n  color: #555\r\n}\r\n\r\n.pannel-field>.data {\r\n  font-size: 1.7rem;\r\n  margin: 5px 0;\r\n}\r\n\r\n.options-pannel {\r\n  display: none;\r\n  justify-content: center;\r\n  align-items: flex-start;\r\n}\r\n\r\n.options.pannel-field {\r\n  display: none;\r\n}\r\n\r\n.close {\r\n  width: 30px;\r\n  height: 30px;\r\n  border-radius: 15px;\r\n  position: absolute;\r\n  top: -10px;\r\n  right: -10px;\r\n}\r\n\r\n.close-img {\r\n  width: 14px;\r\n  height: 14px;\r\n  position: absolute;\r\n  top: 50%;\r\n  left: 50%;\r\n  transform: translate(-50%, -50%);\r\n}\r\n\r\n.close.close-seats {\r\n  top: 0;\r\n  right: 0;\r\n}\r\n\r\n.option.origin:hover, .option.destination:hover {\r\n  cursor: pointer;\r\n  font-weight: 600;\r\n}\r\n\r\n/* calendar start*/\r\n\r\n.calendar {\r\n  padding: 0;\r\n  background-color: #fff;\r\n  border-radius: 20px;\r\n  width: 100%;\r\n  display: none;\r\n}\r\n\r\n.month {\r\n  width: 100%;\r\n  height: 4rem;\r\n  background-color: #01395e;\r\n  color: #fff;\r\n  display: flex;\r\n  justify-content: space-between;\r\n  align-items: center;\r\n  padding: 0 2rem;\r\n  text-align: center;\r\n  border-radius: 20px 20px 0 0;\r\n}\r\n\r\n.month i {\r\n  font-size: 2.5rem;\r\n  cursor: pointer;\r\n}\r\n\r\n.month h1 {\r\n  line-height: 4rem;\r\n  font-size: 1.7rem;\r\n  font-weight: 400;\r\n  text-transform: uppercase;\r\n  letter-spacing: 0.2rem;\r\n}\r\n\r\n.weekdays {\r\n  width: 100%;\r\n  height: 4rem;\r\n  padding: 0 0.4rem;\r\n  display: flex;\r\n  align-items: center;\r\n}\r\n\r\n.weekdays div {\r\n  font-size: 1.4rem;\r\n  font-weight: 400;\r\n  letter-spacing: 0.1rem;\r\n  width: calc((86vw - 42px) / 7);\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n}\r\n\r\n.days {\r\n  width: 100%;\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  justify-content: center;\r\n  padding: 0.2rem;\r\n}\r\n\r\n.days div {\r\n  font-size: 1.3rem;\r\n  margin: calc(1vw / 14);\r\n  width: calc((86vw - 54px) / 7);\r\n  height: calc((366px - 36px - 10px - 8rem) / 6);\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n  transition: background-color 0.2s;\r\n}\r\n\r\n.days div:hover:not(.prev-date):not(.next-date):not(.past-days), .days .chosen {\r\n  background-color: #01395e;\r\n  cursor: pointer;\r\n  color: #fff;\r\n}\r\n\r\n.prev-date,\r\n.next-date {\r\n  opacity: 0;\r\n}\r\n\r\n.past-days {\r\n  color: #bbb;\r\n}\r\n/* calendar end*/\r\n\r\n.passengers-container {\r\n  margin: 15px 0;\r\n  display: grid;\r\n  grid-template-columns: 1fr repeat(3, 15%);\r\n  grid-column-gap: 0px;\r\n  grid-row-gap: 10px;\r\n  font-size: 1.7rem\r\n}\r\n\r\n.passengers-container>* {\r\n  align-self: center\r\n}\r\n\r\n.passenger-type-info {\r\n  font-size: 1.2rem;\r\n  color: #777\r\n}\r\n\r\n.passenger-amount, .passenger-sign {\r\n  margin: 0 auto;\r\n  color: #01395e;\r\n}\r\n\r\n.passenger-amount {\r\n  font-size: 2rem;\r\n  font-weight: bold;\r\n}\r\n\r\n.accept-passengers {\r\n  grid-area: 4 / 1 / 5 / 5;\r\n  margin: 15px auto 0;\r\n}\r\n\r\n.weather-pannel {\r\n  height: 300px;\r\n  display: none;\r\n}\r\n\r\n.login-pannel {\r\n  background-color: #01395e;\r\n  display: none;\r\n}\r\n\r\n.form-control>input {\r\n  border: none;\r\n  font-size: 1.7rem;\r\n  font-family: 'Lato', sans-serif;\r\n  width: 100%;\r\n  margin: 5px 0;\r\n  outline: none;\r\n}\r\n\r\n.login-accept {\r\n  margin: 14px auto 0;\r\n  background-color: #206797\r\n}\r\n\r\n.login-error-text {\r\n  margin: 20px auto;\r\n  font-size: 1.6rem;\r\n  color: #ca7641;\r\n  text-align: center;\r\n  display: none;\r\n}\r\n\r\n.airplane {\r\n  width: 100%;\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  overflow-y: scroll;\r\n  display: none;\r\n}\r\n\r\n#airplane-svg {\r\n  height: 750px;\r\n  width: 100%;\r\n  margin: 0 auto;\r\n}\r\n\r\n.seat:hover {\r\n  cursor: pointer;\r\n}\r\n\r\n[id=384617]>rect {\r\n  fill: #ff00ff;\r\n}\r\n\r\ninput:-webkit-autofill {\r\n  -webkit-box-shadow: 0 0 0px 1000px #fff inset;\r\n}\r\n\r\ninput.empty:-webkit-autofill {\r\n  -webkit-box-shadow: 0 0 0px 1000px #e9af8b inset;\r\n}\r\n\r\n@media only screen and (max-width: 1400px) and (min-width: 800px) {\r\n  html {\r\n    font-size: 8px;\r\n  }\r\n}\r\n\r\n@media only screen and (min-width: 800px) {\r\n  body {\r\n    height: 100vh;\r\n  }\r\n  nav {\r\n    padding: 2vh 3vw;\r\n  }\r\n\r\n  .logo img {\r\n    height: 60px;\r\n  }\r\n\r\n  .logo h1 {\r\n    font-size: 2.8rem;\r\n  }\r\n\r\n  .btn-login {\r\n    border-radius: 25px;\r\n    width: 150px;\r\n    height: 50px;\r\n    font-size: 2rem;\r\n  }\r\n\r\n  .main-container {\r\n    top: 150px;\r\n  }\r\n\r\n  .wrapper {\r\n    width: 20vw;\r\n    padding: 18px 1.2vw;\r\n    border-radius: 25px;\r\n  }\r\n  \r\n  .pannel-field, .form-control {\r\n    border-radius: 25px;\r\n    padding: 5px 1.8vw;\r\n  }\r\n\r\n  .calendar {\r\n    padding: 0;\r\n    border-radius: 25px;\r\n  }\r\n\r\n  .weekdays div {\r\n    width: calc((20vw - 2.4vw - 2px) / 7);\r\n  }\r\n\r\n  .days div {\r\n    margin: 0.1rem;\r\n    width: calc((20vw - 2.4vw - 2px - 2rem) / 7);\r\n    height: calc((366px - 36px - 16px - 8rem) / 6);\r\n  }\r\n\r\n  .search-pannel {\r\n    left: 0;\r\n  }\r\n\r\n  .options-pannel {\r\n    left: 20.5vw;\r\n  }\r\n\r\n  /* .weather-pannel {\r\n    left: 0;\r\n  } */\r\n\r\n  .login-pannel {\r\n    left: 68vw;\r\n  }\r\n\r\n  .airplane {\r\n    width: 20vw;\r\n    left: 20.5vw;\r\n    overflow-y: auto;\r\n  }\r\n\r\n  #airplane-svg {\r\n    height: 700px;\r\n  }\r\n}", "",{"version":3,"sources":["webpack://./src/css/index.css"],"names":[],"mappings":"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","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Marmelad&display=swap');\r\n\r\n* {\r\n  margin: 0;\r\n  padding: 0;\r\n  box-sizing: border-box;\r\n}\r\n\r\nhtml {\r\n  font-size: 10px;\r\n  font-family: 'Lato', sans-serif;\r\n}\r\n\r\nbody {\r\n  width: 100%;\r\n  height: 870px;\r\n  background-image: url('../images/background_image.jpg');\r\n  background-repeat: no-repeat;\r\n  background-size: cover;\r\n  background-position: center;\r\n}\r\n\r\n/* .background-image {\r\n  width: 100%;\r\n  height: 100%;\r\n  position: fixed;\r\n  top: 0;\r\n  left: 0;\r\n  background-image: url('../images/background_image.jpg');\r\n  background-repeat: no-repeat;\r\n  background-size: cover;\r\n  background-position: center;\r\n  z-index: -1;\r\n} */\r\n\r\nnav {\r\n  width: 100%;\r\n  padding: 2vh 6vw;\r\n  background: rgba(255, 255, 255, 0.4);\r\n  display: flex;\r\n  justify-content: space-between;\r\n  align-items: center;\r\n}\r\n\r\n.logo {\r\n  max-width: 50%;\r\n  display: flex;\r\n  justify-content: flex-start;\r\n  align-items: center;\r\n}\r\n\r\n.logo img {\r\n  height: 50px;\r\n  width: auto;\r\n  margin-right: 10px;\r\n}\r\n\r\n.logo h1 {\r\n  font-family: 'Marmelad', sans-serif;\r\n  color: #01395e;\r\n  font-size: 2.4rem;\r\n}\r\n\r\n.btn {\r\n  border: none;\r\n  border-radius: 20px;\r\n  width: 120px;\r\n  height: 40px;\r\n  background-color: #01395e;\r\n  color: #fff;\r\n  font-family: 'Lato', sans-serif;\r\n  font-size: 1.7rem;\r\n}\r\n\r\n.hover-pointer:hover {\r\n  cursor: pointer;\r\n}\r\n\r\n.main-container {\r\n  width: 88vw;\r\n  position: absolute;\r\n  top: 100px;\r\n  left: 6vw;\r\n}\r\n\r\n.wrapper {\r\n  background-color: rgba(255, 255, 255, 0.4);\r\n  width: 100%;\r\n  height: 366px;\r\n  padding: 18px 20px;\r\n  border-radius: 20px;\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n}\r\n\r\n.search-pannel, .form {\r\n  display: grid;\r\n  grid-template-columns: 1fr;\r\n  grid-gap: 10px;\r\n}\r\n\r\n.pannel-field, .form-control {\r\n  background-color: #fff;\r\n  border-radius: 20px;\r\n  padding: 5px 4vw;\r\n  width: 100%;\r\n}\r\n\r\n/* .accept {\r\n  margin: 14px auto 0;\r\n} */\r\n\r\n#buttons-wrapper {\r\n  margin: 14px auto 0;\r\n}\r\n\r\n/* .btn.order {\r\n  background-color: #ca7641;;\r\n} */\r\n\r\n.btn.order {\r\n  background-color: #ca7641;\r\n}\r\n\r\n.btn:disabled {\r\n  background-color: #8b8b8b;\r\n  cursor: auto;\r\n}\r\n\r\n.pannel-field>.field-title, .form-control>label {\r\n  font-size: 1.4rem;\r\n  color: #555\r\n}\r\n\r\n.pannel-field>.data {\r\n  font-size: 1.7rem;\r\n  margin: 5px 0;\r\n}\r\n\r\n.options-pannel {\r\n  display: none;\r\n  justify-content: center;\r\n  align-items: flex-start;\r\n}\r\n\r\n.options.pannel-field {\r\n  display: none;\r\n}\r\n\r\n.close {\r\n  width: 30px;\r\n  height: 30px;\r\n  border-radius: 15px;\r\n  position: absolute;\r\n  top: -10px;\r\n  right: -10px;\r\n}\r\n\r\n.close-img {\r\n  width: 14px;\r\n  height: 14px;\r\n  position: absolute;\r\n  top: 50%;\r\n  left: 50%;\r\n  transform: translate(-50%, -50%);\r\n}\r\n\r\n.close.close-seats {\r\n  top: 0;\r\n  right: 0;\r\n}\r\n\r\n.option.origin:hover, .option.destination:hover {\r\n  cursor: pointer;\r\n  font-weight: 600;\r\n}\r\n\r\n/* calendar start*/\r\n\r\n.calendar {\r\n  padding: 0;\r\n  background-color: #fff;\r\n  border-radius: 20px;\r\n  width: 100%;\r\n  display: none;\r\n}\r\n\r\n.month {\r\n  width: 100%;\r\n  height: 4rem;\r\n  background-color: #01395e;\r\n  color: #fff;\r\n  display: flex;\r\n  justify-content: space-between;\r\n  align-items: center;\r\n  padding: 0 2rem;\r\n  text-align: center;\r\n  border-radius: 20px 20px 0 0;\r\n}\r\n\r\n.month i {\r\n  font-size: 2.5rem;\r\n  cursor: pointer;\r\n}\r\n\r\n.month h1 {\r\n  line-height: 4rem;\r\n  font-size: 1.7rem;\r\n  font-weight: 400;\r\n  text-transform: uppercase;\r\n  letter-spacing: 0.2rem;\r\n}\r\n\r\n.weekdays {\r\n  width: 100%;\r\n  height: 4rem;\r\n  padding: 0 0.4rem;\r\n  display: flex;\r\n  align-items: center;\r\n}\r\n\r\n.weekdays div {\r\n  font-size: 1.4rem;\r\n  font-weight: 400;\r\n  letter-spacing: 0.1rem;\r\n  width: calc((86vw - 42px) / 7);\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n}\r\n\r\n.days {\r\n  width: 100%;\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  justify-content: center;\r\n  padding: 0.2rem;\r\n}\r\n\r\n.days div {\r\n  font-size: 1.3rem;\r\n  margin: calc(1vw / 14);\r\n  width: calc((86vw - 54px) / 7);\r\n  height: calc((366px - 36px - 10px - 8rem) / 6);\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n  transition: background-color 0.2s;\r\n}\r\n\r\n.days div:hover:not(.prev-date):not(.next-date):not(.past-days), .days .chosen {\r\n  background-color: #01395e;\r\n  cursor: pointer;\r\n  color: #fff;\r\n}\r\n\r\n.prev-date,\r\n.next-date {\r\n  opacity: 0;\r\n}\r\n\r\n.past-days {\r\n  color: #bbb;\r\n}\r\n/* calendar end*/\r\n\r\n.passengers-container {\r\n  margin: 15px 0;\r\n  display: grid;\r\n  grid-template-columns: 1fr repeat(3, 15%);\r\n  grid-column-gap: 0px;\r\n  grid-row-gap: 10px;\r\n  font-size: 1.7rem\r\n}\r\n\r\n.passengers-container>* {\r\n  align-self: center\r\n}\r\n\r\n.passenger-type-info {\r\n  font-size: 1.2rem;\r\n  color: #777\r\n}\r\n\r\n.passenger-amount, .passenger-sign {\r\n  margin: 0 auto;\r\n  color: #01395e;\r\n}\r\n\r\n.passenger-amount {\r\n  font-size: 2rem;\r\n  font-weight: bold;\r\n}\r\n\r\n.accept-passengers {\r\n  grid-area: 4 / 1 / 5 / 5;\r\n  margin: 15px auto 0;\r\n}\r\n\r\n.weather-pannel {\r\n  height: 300px;\r\n  display: none;\r\n}\r\n\r\n.login-pannel {\r\n  background-color: #01395e;\r\n  display: none;\r\n}\r\n\r\n.form-control>input {\r\n  border: none;\r\n  font-size: 1.7rem;\r\n  font-family: 'Lato', sans-serif;\r\n  width: 100%;\r\n  margin: 5px 0;\r\n  outline: none;\r\n}\r\n\r\n.login-accept {\r\n  margin: 14px auto 0;\r\n  background-color: #206797\r\n}\r\n\r\n.login-error-text {\r\n  margin: 20px auto;\r\n  font-size: 1.6rem;\r\n  color: #ca7641;\r\n  text-align: center;\r\n  display: none;\r\n}\r\n\r\n.airplane {\r\n  width: 100%;\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  overflow-y: scroll;\r\n  display: none;\r\n}\r\n\r\n#airplane-svg {\r\n  height: 750px;\r\n  width: 100%;\r\n  margin: 0 auto;\r\n}\r\n\r\n.seat:hover {\r\n  cursor: pointer;\r\n}\r\n\r\n[id=384617]>rect {\r\n  fill: #ff00ff;\r\n}\r\n\r\ninput:-webkit-autofill {\r\n  -webkit-box-shadow: 0 0 0px 1000px #fff inset;\r\n}\r\n\r\ninput.empty:-webkit-autofill {\r\n  -webkit-box-shadow: 0 0 0px 1000px #e9af8b inset;\r\n}\r\n\r\n@media only screen and (max-width: 1400px) and (min-width: 800px) {\r\n  html {\r\n    font-size: 8px;\r\n  }\r\n}\r\n\r\n@media only screen and (min-width: 800px) {\r\n  body {\r\n    height: 100vh;\r\n  }\r\n  nav {\r\n    padding: 2vh 3vw;\r\n  }\r\n\r\n  .logo img {\r\n    height: 60px;\r\n  }\r\n\r\n  .logo h1 {\r\n    font-size: 2.8rem;\r\n  }\r\n\r\n  .btn-login {\r\n    border-radius: 25px;\r\n    width: 150px;\r\n    height: 50px;\r\n    font-size: 2rem;\r\n  }\r\n\r\n  .main-container {\r\n    top: 150px;\r\n  }\r\n\r\n  .wrapper {\r\n    width: 20vw;\r\n    padding: 18px 1.2vw;\r\n    border-radius: 25px;\r\n  }\r\n  \r\n  .pannel-field, .form-control {\r\n    border-radius: 25px;\r\n    padding: 5px 1.8vw;\r\n  }\r\n\r\n  .calendar {\r\n    padding: 0;\r\n    border-radius: 25px;\r\n  }\r\n\r\n  .weekdays div {\r\n    width: calc((20vw - 2.4vw - 2px) / 7);\r\n  }\r\n\r\n  .days div {\r\n    margin: 0.1rem;\r\n    width: calc((20vw - 2.4vw - 2px - 2rem) / 7);\r\n    height: calc((366px - 36px - 16px - 8rem) / 6);\r\n  }\r\n\r\n  .search-pannel {\r\n    left: 0;\r\n  }\r\n\r\n  .options-pannel {\r\n    left: 20.5vw;\r\n  }\r\n\r\n  /* .weather-pannel {\r\n    left: 0;\r\n  } */\r\n\r\n  .login-pannel {\r\n    left: 68vw;\r\n  }\r\n\r\n  .airplane {\r\n    width: 20vw;\r\n    left: 20.5vw;\r\n    overflow-y: auto;\r\n  }\r\n\r\n  #airplane-svg {\r\n    height: 700px;\r\n  }\r\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\r\n  margin: 0;\r\n  padding: 0;\r\n  box-sizing: border-box;\r\n}\r\n\r\nhtml {\r\n  font-size: 10px;\r\n  font-family: 'Lato', sans-serif;\r\n}\r\n\r\nbody {\r\n  width: 100%;\r\n  height: 870px;\r\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\r\n  background-repeat: no-repeat;\r\n  background-size: cover;\r\n  background-position: center;\r\n}\r\n\r\nnav {\r\n  width: 100%;\r\n  padding: 2vh 6vw;\r\n  background: rgba(255, 255, 255, 0.4);\r\n  display: flex;\r\n  justify-content: space-between;\r\n  align-items: center;\r\n}\r\n\r\n.logo {\r\n  max-width: 50%;\r\n  display: flex;\r\n  justify-content: flex-start;\r\n  align-items: center;\r\n}\r\n\r\n.logo img {\r\n  height: 50px;\r\n  width: auto;\r\n  margin-right: 10px;\r\n}\r\n\r\n.logo h1 {\r\n  font-family: 'Marmelad', sans-serif;\r\n  color: #01395e;\r\n  font-size: 2.4rem;\r\n}\r\n\r\n.btn {\r\n  border: none;\r\n  border-radius: 20px;\r\n  width: 120px;\r\n  height: 40px;\r\n  background-color: #01395e;\r\n  color: #fff;\r\n  font-family: 'Lato', sans-serif;\r\n  font-size: 1.7rem;\r\n}\r\n\r\n.hover-pointer:hover {\r\n  cursor: pointer;\r\n}\r\n\r\n.main-container {\r\n  width: 88vw;\r\n  position: absolute;\r\n  top: 100px;\r\n  left: 6vw;\r\n}\r\n\r\n.wrapper {\r\n  background-color: rgba(255, 255, 255, 0.4);\r\n  width: 100%;\r\n  height: 400px;\r\n  padding: 18px 20px;\r\n  border-radius: 20px;\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n}\r\n\r\n.search-pannel, .form {\r\n  display: grid;\r\n  grid-template-columns: 1fr;\r\n  grid-gap: 10px;\r\n}\r\n\r\n.pannel-field, .form-control {\r\n  background-color: #fff;\r\n  border-radius: 20px;\r\n  padding: 5px 4vw;\r\n  width: 100%;\r\n}\r\n\r\n.price {\r\n  margin: 0 auto;\r\n  font-size: 1.7rem;\r\n  font-weight: normal;\r\n}\r\n\r\n#buttons-wrapper {\r\n  margin: 0 auto ;\r\n  text-align: center;\r\n}\r\n\r\n#buttons-wrapper>button {\r\n  margin-bottom: 5px;\r\n}\r\n\r\n.btn.order {\r\n  background-color: #ca7641;\r\n}\r\n\r\n.btn:disabled {\r\n  background-color: #8b8b8b;\r\n  cursor: auto;\r\n}\r\n\r\n.pannel-field>.field-title, .form-control>label {\r\n  font-size: 1.4rem;\r\n  color: #555\r\n}\r\n\r\n.pannel-field>.data {\r\n  font-size: 1.7rem;\r\n  margin: 5px 0;\r\n}\r\n\r\n.options-pannel {\r\n  display: none;\r\n  justify-content: center;\r\n  align-items: flex-start;\r\n}\r\n\r\n.options.pannel-field {\r\n  display: none;\r\n}\r\n\r\n.close {\r\n  width: 30px;\r\n  height: 30px;\r\n  border-radius: 15px;\r\n  position: absolute;\r\n  top: -10px;\r\n  right: -10px;\r\n}\r\n\r\n.close-img {\r\n  width: 14px;\r\n  height: 14px;\r\n  position: absolute;\r\n  top: 50%;\r\n  left: 50%;\r\n  transform: translate(-50%, -50%);\r\n}\r\n\r\n.close.close-seats {\r\n  top: 0;\r\n  right: 0;\r\n}\r\n\r\n.option.origin:hover, .option.destination:hover {\r\n  cursor: pointer;\r\n  font-weight: 600;\r\n}\r\n\r\n/* calendar start*/\r\n\r\n.calendar {\r\n  padding: 0;\r\n  background-color: #fff;\r\n  border-radius: 20px;\r\n  width: 100%;\r\n  display: none;\r\n}\r\n\r\n.month {\r\n  width: 100%;\r\n  height: 4rem;\r\n  background-color: #01395e;\r\n  color: #fff;\r\n  display: flex;\r\n  justify-content: space-between;\r\n  align-items: center;\r\n  padding: 0 2rem;\r\n  text-align: center;\r\n  border-radius: 20px 20px 0 0;\r\n}\r\n\r\n.month i {\r\n  font-size: 2.5rem;\r\n  cursor: pointer;\r\n}\r\n\r\n.month h1 {\r\n  line-height: 4rem;\r\n  font-size: 1.7rem;\r\n  font-weight: 400;\r\n  text-transform: uppercase;\r\n  letter-spacing: 0.2rem;\r\n}\r\n\r\n.weekdays {\r\n  width: 100%;\r\n  height: 4rem;\r\n  padding: 0 0.4rem;\r\n  display: flex;\r\n  align-items: center;\r\n}\r\n\r\n.weekdays div {\r\n  font-size: 1.4rem;\r\n  font-weight: 400;\r\n  letter-spacing: 0.1rem;\r\n  width: calc((86vw - 42px) / 7);\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n}\r\n\r\n.days {\r\n  width: 100%;\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  justify-content: center;\r\n  padding: 0.2rem;\r\n}\r\n\r\n.days div {\r\n  font-size: 1.3rem;\r\n  margin: calc(1vw / 14);\r\n  width: calc((86vw - 54px) / 7);\r\n  height: calc((366px - 36px - 10px - 8rem) / 6);\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n  transition: background-color 0.2s;\r\n}\r\n\r\n.days div:hover:not(.prev-date):not(.next-date):not(.past-days), .days .chosen {\r\n  background-color: #01395e;\r\n  cursor: pointer;\r\n  color: #fff;\r\n}\r\n\r\n.prev-date,\r\n.next-date {\r\n  opacity: 0;\r\n}\r\n\r\n.past-days {\r\n  color: #bbb;\r\n}\r\n/* calendar end*/\r\n\r\n.passengers-container {\r\n  margin: 15px 0;\r\n  display: grid;\r\n  grid-template-columns: 1fr repeat(3, 15%);\r\n  grid-column-gap: 0px;\r\n  grid-row-gap: 10px;\r\n  font-size: 1.7rem\r\n}\r\n\r\n.passengers-container>* {\r\n  align-self: center\r\n}\r\n\r\n.passenger-type-info {\r\n  font-size: 1.2rem;\r\n  color: #777\r\n}\r\n\r\n.passenger-amount, .passenger-sign {\r\n  margin: 0 auto;\r\n  color: #01395e;\r\n}\r\n\r\n.passenger-amount {\r\n  font-size: 2rem;\r\n  font-weight: bold;\r\n}\r\n\r\n.accept-passengers {\r\n  grid-area: 4 / 1 / 5 / 5;\r\n  margin: 15px auto 0;\r\n}\r\n\r\n.weather-pannel {\r\n  height: 300px;\r\n  display: none;\r\n}\r\n\r\n.login-pannel {\r\n  background-color: #01395e;\r\n  display: none;\r\n}\r\n\r\n.form-control>input {\r\n  border: none;\r\n  font-size: 1.7rem;\r\n  font-family: 'Lato', sans-serif;\r\n  width: 100%;\r\n  margin: 5px 0;\r\n  outline: none;\r\n}\r\n\r\n.login-accept {\r\n  margin: 14px auto 0;\r\n  background-color: #206797\r\n}\r\n\r\n.login-error-text {\r\n  margin: 20px auto;\r\n  font-size: 1.6rem;\r\n  color: #ca7641;\r\n  text-align: center;\r\n  display: none;\r\n}\r\n\r\n.sumup-pannel {\r\n  z-index: 10;\r\n  font-size: 1.7rem;\r\n  display: none;\r\n}\r\n\r\n.sumup.pannel-field {\r\n  padding: 10px 4vw;\r\n  display: flex;\r\n  flex-direction: column;\r\n}\r\n\r\nh3.sumup {\r\n  margin: 6px 0;\r\n}\r\n\r\np.sumup {\r\n  margin: 3px 0;\r\n}\r\n\r\n.btn.sumup {\r\n  margin: 14px auto 0;\r\n  align-self: center;\r\n}\r\n\r\n.airplane {\r\n  width: 100%;\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  overflow-y: scroll;\r\n  display: none;\r\n}\r\n\r\n#airplane-svg {\r\n  height: 750px;\r\n  width: 100%;\r\n  margin: 0 auto;\r\n}\r\n\r\n.seat:hover {\r\n  cursor: pointer;\r\n}\r\n\r\ninput:-webkit-autofill {\r\n  -webkit-box-shadow: 0 0 0px 1000px #fff inset;\r\n}\r\n\r\ninput.empty:-webkit-autofill {\r\n  -webkit-box-shadow: 0 0 0px 1000px #e9af8b inset;\r\n}\r\n\r\n@media only screen and (max-width: 1400px) and (min-width: 800px) {\r\n  html {\r\n    font-size: 8px;\r\n  }\r\n}\r\n\r\n@media only screen and (min-width: 800px) {\r\n  body {\r\n    height: 100vh;\r\n  }\r\n  nav {\r\n    padding: 2vh 3vw;\r\n  }\r\n\r\n  .logo img {\r\n    height: 60px;\r\n  }\r\n\r\n  .logo h1 {\r\n    font-size: 2.8rem;\r\n  }\r\n\r\n  .btn-login {\r\n    border-radius: 25px;\r\n    width: 150px;\r\n    height: 50px;\r\n    font-size: 2rem;\r\n  }\r\n\r\n  .main-container {\r\n    top: 150px;\r\n  }\r\n\r\n  .wrapper {\r\n    width: 20vw;\r\n    padding: 18px 1.2vw;\r\n    border-radius: 25px;\r\n  }\r\n  \r\n  .pannel-field, .form-control {\r\n    border-radius: 25px;\r\n    padding: 5px 1.8vw;\r\n  }\r\n\r\n  .calendar {\r\n    padding: 0;\r\n    border-radius: 25px;\r\n  }\r\n\r\n  .weekdays div {\r\n    width: calc((20vw - 2.4vw - 2px) / 7);\r\n  }\r\n\r\n  .days div {\r\n    margin: 0.1rem;\r\n    width: calc((20vw - 2.4vw - 2px - 2rem) / 7);\r\n    height: calc((366px - 36px - 16px - 8rem) / 6);\r\n  }\r\n\r\n  .search-pannel {\r\n    left: 0;\r\n  }\r\n\r\n  .options-pannel {\r\n    left: 20.5vw;\r\n  }\r\n\r\n  /* .weather-pannel {\r\n    left: 0;\r\n  } */\r\n\r\n  .login-pannel {\r\n    left: 68vw;\r\n  }\r\n\r\n  .sumup-pannel {\r\n    left: 50%;\r\n    transform: translateX(-50%);\r\n  }\r\n\r\n  .sumup.pannel-field {\r\n    padding: 10px 1.8vw;\r\n  }\r\n\r\n  .airplane {\r\n    width: 20vw;\r\n    left: 20.5vw;\r\n    overflow-y: auto;\r\n  }\r\n\r\n  #airplane-svg {\r\n    height: 700px;\r\n  }\r\n}", "",{"version":3,"sources":["webpack://./src/css/index.css"],"names":[],"mappings":"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","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Marmelad&display=swap');\r\n\r\n* {\r\n  margin: 0;\r\n  padding: 0;\r\n  box-sizing: border-box;\r\n}\r\n\r\nhtml {\r\n  font-size: 10px;\r\n  font-family: 'Lato', sans-serif;\r\n}\r\n\r\nbody {\r\n  width: 100%;\r\n  height: 870px;\r\n  background-image: url('../images/background_image.jpg');\r\n  background-repeat: no-repeat;\r\n  background-size: cover;\r\n  background-position: center;\r\n}\r\n\r\nnav {\r\n  width: 100%;\r\n  padding: 2vh 6vw;\r\n  background: rgba(255, 255, 255, 0.4);\r\n  display: flex;\r\n  justify-content: space-between;\r\n  align-items: center;\r\n}\r\n\r\n.logo {\r\n  max-width: 50%;\r\n  display: flex;\r\n  justify-content: flex-start;\r\n  align-items: center;\r\n}\r\n\r\n.logo img {\r\n  height: 50px;\r\n  width: auto;\r\n  margin-right: 10px;\r\n}\r\n\r\n.logo h1 {\r\n  font-family: 'Marmelad', sans-serif;\r\n  color: #01395e;\r\n  font-size: 2.4rem;\r\n}\r\n\r\n.btn {\r\n  border: none;\r\n  border-radius: 20px;\r\n  width: 120px;\r\n  height: 40px;\r\n  background-color: #01395e;\r\n  color: #fff;\r\n  font-family: 'Lato', sans-serif;\r\n  font-size: 1.7rem;\r\n}\r\n\r\n.hover-pointer:hover {\r\n  cursor: pointer;\r\n}\r\n\r\n.main-container {\r\n  width: 88vw;\r\n  position: absolute;\r\n  top: 100px;\r\n  left: 6vw;\r\n}\r\n\r\n.wrapper {\r\n  background-color: rgba(255, 255, 255, 0.4);\r\n  width: 100%;\r\n  height: 400px;\r\n  padding: 18px 20px;\r\n  border-radius: 20px;\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n}\r\n\r\n.search-pannel, .form {\r\n  display: grid;\r\n  grid-template-columns: 1fr;\r\n  grid-gap: 10px;\r\n}\r\n\r\n.pannel-field, .form-control {\r\n  background-color: #fff;\r\n  border-radius: 20px;\r\n  padding: 5px 4vw;\r\n  width: 100%;\r\n}\r\n\r\n.price {\r\n  margin: 0 auto;\r\n  font-size: 1.7rem;\r\n  font-weight: normal;\r\n}\r\n\r\n#buttons-wrapper {\r\n  margin: 0 auto ;\r\n  text-align: center;\r\n}\r\n\r\n#buttons-wrapper>button {\r\n  margin-bottom: 5px;\r\n}\r\n\r\n.btn.order {\r\n  background-color: #ca7641;\r\n}\r\n\r\n.btn:disabled {\r\n  background-color: #8b8b8b;\r\n  cursor: auto;\r\n}\r\n\r\n.pannel-field>.field-title, .form-control>label {\r\n  font-size: 1.4rem;\r\n  color: #555\r\n}\r\n\r\n.pannel-field>.data {\r\n  font-size: 1.7rem;\r\n  margin: 5px 0;\r\n}\r\n\r\n.options-pannel {\r\n  display: none;\r\n  justify-content: center;\r\n  align-items: flex-start;\r\n}\r\n\r\n.options.pannel-field {\r\n  display: none;\r\n}\r\n\r\n.close {\r\n  width: 30px;\r\n  height: 30px;\r\n  border-radius: 15px;\r\n  position: absolute;\r\n  top: -10px;\r\n  right: -10px;\r\n}\r\n\r\n.close-img {\r\n  width: 14px;\r\n  height: 14px;\r\n  position: absolute;\r\n  top: 50%;\r\n  left: 50%;\r\n  transform: translate(-50%, -50%);\r\n}\r\n\r\n.close.close-seats {\r\n  top: 0;\r\n  right: 0;\r\n}\r\n\r\n.option.origin:hover, .option.destination:hover {\r\n  cursor: pointer;\r\n  font-weight: 600;\r\n}\r\n\r\n/* calendar start*/\r\n\r\n.calendar {\r\n  padding: 0;\r\n  background-color: #fff;\r\n  border-radius: 20px;\r\n  width: 100%;\r\n  display: none;\r\n}\r\n\r\n.month {\r\n  width: 100%;\r\n  height: 4rem;\r\n  background-color: #01395e;\r\n  color: #fff;\r\n  display: flex;\r\n  justify-content: space-between;\r\n  align-items: center;\r\n  padding: 0 2rem;\r\n  text-align: center;\r\n  border-radius: 20px 20px 0 0;\r\n}\r\n\r\n.month i {\r\n  font-size: 2.5rem;\r\n  cursor: pointer;\r\n}\r\n\r\n.month h1 {\r\n  line-height: 4rem;\r\n  font-size: 1.7rem;\r\n  font-weight: 400;\r\n  text-transform: uppercase;\r\n  letter-spacing: 0.2rem;\r\n}\r\n\r\n.weekdays {\r\n  width: 100%;\r\n  height: 4rem;\r\n  padding: 0 0.4rem;\r\n  display: flex;\r\n  align-items: center;\r\n}\r\n\r\n.weekdays div {\r\n  font-size: 1.4rem;\r\n  font-weight: 400;\r\n  letter-spacing: 0.1rem;\r\n  width: calc((86vw - 42px) / 7);\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n}\r\n\r\n.days {\r\n  width: 100%;\r\n  display: flex;\r\n  flex-wrap: wrap;\r\n  justify-content: center;\r\n  padding: 0.2rem;\r\n}\r\n\r\n.days div {\r\n  font-size: 1.3rem;\r\n  margin: calc(1vw / 14);\r\n  width: calc((86vw - 54px) / 7);\r\n  height: calc((366px - 36px - 10px - 8rem) / 6);\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n  transition: background-color 0.2s;\r\n}\r\n\r\n.days div:hover:not(.prev-date):not(.next-date):not(.past-days), .days .chosen {\r\n  background-color: #01395e;\r\n  cursor: pointer;\r\n  color: #fff;\r\n}\r\n\r\n.prev-date,\r\n.next-date {\r\n  opacity: 0;\r\n}\r\n\r\n.past-days {\r\n  color: #bbb;\r\n}\r\n/* calendar end*/\r\n\r\n.passengers-container {\r\n  margin: 15px 0;\r\n  display: grid;\r\n  grid-template-columns: 1fr repeat(3, 15%);\r\n  grid-column-gap: 0px;\r\n  grid-row-gap: 10px;\r\n  font-size: 1.7rem\r\n}\r\n\r\n.passengers-container>* {\r\n  align-self: center\r\n}\r\n\r\n.passenger-type-info {\r\n  font-size: 1.2rem;\r\n  color: #777\r\n}\r\n\r\n.passenger-amount, .passenger-sign {\r\n  margin: 0 auto;\r\n  color: #01395e;\r\n}\r\n\r\n.passenger-amount {\r\n  font-size: 2rem;\r\n  font-weight: bold;\r\n}\r\n\r\n.accept-passengers {\r\n  grid-area: 4 / 1 / 5 / 5;\r\n  margin: 15px auto 0;\r\n}\r\n\r\n.weather-pannel {\r\n  height: 300px;\r\n  display: none;\r\n}\r\n\r\n.login-pannel {\r\n  background-color: #01395e;\r\n  display: none;\r\n}\r\n\r\n.form-control>input {\r\n  border: none;\r\n  font-size: 1.7rem;\r\n  font-family: 'Lato', sans-serif;\r\n  width: 100%;\r\n  margin: 5px 0;\r\n  outline: none;\r\n}\r\n\r\n.login-accept {\r\n  margin: 14px auto 0;\r\n  background-color: #206797\r\n}\r\n\r\n.login-error-text {\r\n  margin: 20px auto;\r\n  font-size: 1.6rem;\r\n  color: #ca7641;\r\n  text-align: center;\r\n  display: none;\r\n}\r\n\r\n.sumup-pannel {\r\n  z-index: 10;\r\n  font-size: 1.7rem;\r\n  display: none;\r\n}\r\n\r\n.sumup.pannel-field {\r\n  padding: 10px 4vw;\r\n  display: flex;\r\n  flex-direction: column;\r\n}\r\n\r\nh3.sumup {\r\n  margin: 6px 0;\r\n}\r\n\r\np.sumup {\r\n  margin: 3px 0;\r\n}\r\n\r\n.btn.sumup {\r\n  margin: 14px auto 0;\r\n  align-self: center;\r\n}\r\n\r\n.airplane {\r\n  width: 100%;\r\n  position: absolute;\r\n  top: 0;\r\n  left: 0;\r\n  overflow-y: scroll;\r\n  display: none;\r\n}\r\n\r\n#airplane-svg {\r\n  height: 750px;\r\n  width: 100%;\r\n  margin: 0 auto;\r\n}\r\n\r\n.seat:hover {\r\n  cursor: pointer;\r\n}\r\n\r\ninput:-webkit-autofill {\r\n  -webkit-box-shadow: 0 0 0px 1000px #fff inset;\r\n}\r\n\r\ninput.empty:-webkit-autofill {\r\n  -webkit-box-shadow: 0 0 0px 1000px #e9af8b inset;\r\n}\r\n\r\n@media only screen and (max-width: 1400px) and (min-width: 800px) {\r\n  html {\r\n    font-size: 8px;\r\n  }\r\n}\r\n\r\n@media only screen and (min-width: 800px) {\r\n  body {\r\n    height: 100vh;\r\n  }\r\n  nav {\r\n    padding: 2vh 3vw;\r\n  }\r\n\r\n  .logo img {\r\n    height: 60px;\r\n  }\r\n\r\n  .logo h1 {\r\n    font-size: 2.8rem;\r\n  }\r\n\r\n  .btn-login {\r\n    border-radius: 25px;\r\n    width: 150px;\r\n    height: 50px;\r\n    font-size: 2rem;\r\n  }\r\n\r\n  .main-container {\r\n    top: 150px;\r\n  }\r\n\r\n  .wrapper {\r\n    width: 20vw;\r\n    padding: 18px 1.2vw;\r\n    border-radius: 25px;\r\n  }\r\n  \r\n  .pannel-field, .form-control {\r\n    border-radius: 25px;\r\n    padding: 5px 1.8vw;\r\n  }\r\n\r\n  .calendar {\r\n    padding: 0;\r\n    border-radius: 25px;\r\n  }\r\n\r\n  .weekdays div {\r\n    width: calc((20vw - 2.4vw - 2px) / 7);\r\n  }\r\n\r\n  .days div {\r\n    margin: 0.1rem;\r\n    width: calc((20vw - 2.4vw - 2px - 2rem) / 7);\r\n    height: calc((366px - 36px - 16px - 8rem) / 6);\r\n  }\r\n\r\n  .search-pannel {\r\n    left: 0;\r\n  }\r\n\r\n  .options-pannel {\r\n    left: 20.5vw;\r\n  }\r\n\r\n  /* .weather-pannel {\r\n    left: 0;\r\n  } */\r\n\r\n  .login-pannel {\r\n    left: 68vw;\r\n  }\r\n\r\n  .sumup-pannel {\r\n    left: 50%;\r\n    transform: translateX(-50%);\r\n  }\r\n\r\n  .sumup.pannel-field {\r\n    padding: 10px 1.8vw;\r\n  }\r\n\r\n  .airplane {\r\n    width: 20vw;\r\n    left: 20.5vw;\r\n    overflow-y: auto;\r\n  }\r\n\r\n  #airplane-svg {\r\n    height: 700px;\r\n  }\r\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -695,11 +695,15 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+const lightOrange = '#e9af8b'
+const darkBlue = '#01395e'
+const lightBlue = '#43a9c7'
 
 const wrapperSearch = document.querySelector('.search-pannel');
 const wrapperOptions = document.querySelector('.options-pannel');
 const wrapperWeather = document.querySelector('.wrapper.weather');
 const wrapperLogin = document.querySelector('.login-pannel');
+const wrapperSumup = document.querySelector('.sumup-pannel');
 
 const searchFieldOrigin = document.querySelector('.search.pannel-field.origin');
 const searchFieldDestination = document.querySelector('.search.pannel-field.destination');
@@ -710,6 +714,7 @@ const originDataField = searchFieldOrigin.querySelector('.origin.data');
 const destinationDataField = searchFieldDestination.querySelector('.destination.data');
 const dateDataField = searchFieldDate.querySelector('.date.data');
 const passengersDataField = searchFieldPassengers.querySelector('.passengers.data');
+const totalPriceElement = document.querySelector('.price>span');
 
 const optionsFields = [...document.querySelectorAll('.options.pannel-field'), document.querySelector('.calendar')];
 const optionsFieldOrigin = document.querySelector('.options.pannel-field.origin');
@@ -733,6 +738,15 @@ const loginPasswordDiv = document.querySelector(".form-control.password");
 const loginErrorText = document.querySelector(".login-error-text");
 
 const airplaneSection = document.querySelector(".airplane");
+const availableSeats = [...document.querySelectorAll('.seat')];
+
+const sumupId = document.getElementById('sumup-id');
+const sumupOrigin = document.getElementById('sumup-origin');
+const sumupDestination = document.getElementById('sumup-destination');
+const sumupDate = document.getElementById('sumup-date');
+const sumupPassengers = document.getElementById('sumup-passengers');
+const sumupSeats = document.getElementById('sumup-seats');
+const sumupPrice = document.getElementById('sumup-price');
 
 const btnLogin = document.querySelector('.btn.login');
 const btnOrder = document.querySelector('.btn.order');
@@ -750,7 +764,11 @@ let adults = 1;
 let children = 0;
 let infants = 0;
 let login = false;
-let accepted = false
+let username = ''
+let ordered = false
+let selectedSeats = []
+let ticketPrice = 0
+let totalPrice = 0
 
 const date = new Date();
 
@@ -789,15 +807,18 @@ function onPassengers() {
 
 function onOptionOrigin(event) {
   origin = event.target.innerText
+  sessionStorage.setItem('origin', origin)
+  if (destination) setTotalPrice()
   originDataField.innerText = origin
-  setColor(searchFieldOrigin, 'valid', false)
   closeOptions()
 }
 
 function onOptionDestination(event) {
   destination = event.target.innerText
+  sessionStorage.setItem('destination', destination)
+  ticketPrice = Number(event.target.dataset.price)
+  if (origin) setTotalPrice()
   destinationDataField.innerText = destination
-  setColor(searchFieldDestination, 'valid', false)
   closeOptions()
 }
 
@@ -883,10 +904,11 @@ function onOptionDate(event) {
     let year = event.target.dataset.year
     dateDataField.innerText = `${day < 10 ? '0' + day : day}/${month < 9 ? '0' + (+month + 1) : (month + 1)}/${year}`
     flightDate = dateDataField.innerText
-    setColor(searchFieldDate, 'valid', false)
+    sessionStorage.setItem('flightDate', flightDate)
     const daysDivs = [...document.querySelectorAll('.days>div')];
     daysDivs.forEach(day => day.classList.remove('chosen'))
     event.target.classList.add('chosen')
+    sessionStorage.setItem('flightDateDiv', JSON.stringify({day, month, year}))
     closeOptions()
 }
 
@@ -925,21 +947,24 @@ function onOptionPassenger(event) {
           --infants
           item.innerText = infants
         }
+        if (selectedSeats.length > 0) {
+          const deletedSeat = selectedSeats.pop()
+          deletedSeat.style.fill = lightBlue
+        }
       }
     }
   })
+  sessionStorage.setItem('passengers', JSON.stringify({adults, children, infants}))
 
-  if (children > 0 && infants > 0) {
-    btnsWrapper.style.marginTop = '0'
-  } else {
-    btnsWrapper.style.marginTop = '14px'
-  }
+  if (origin && destination) setTotalPrice()
 
   let adultsTip = adults > 1 ? 's' : ''
   let childrenTip = children > 1 ? 'ren' : ''
   let infantsTip = infants > 1 ? 's' : ''
   let text = `${adults} Adult${adultsTip}${children > 0 ? (', ' + children + ' Child' + childrenTip) : ''}${infants > 0 ? (', ' + infants + ' Infant' + infantsTip) : ''}`
   passengersDataField.innerText = text
+  sessionStorage.setItem('passengersText', text)
+  checkOrderAvailability()
 }
 
 function onWrapperClose(event) {
@@ -971,7 +996,8 @@ function onWrapperClose(event) {
 
 function closeOptions() {
   wrapperOptions.style.display = 'none';
-  wrapperSearch.style.display = 'grid'
+  wrapperSearch.style.display = 'grid';
+  checkOrderAvailability()
 }
 
 function closeSeats() {
@@ -987,10 +1013,10 @@ function setColor(target, validator, isForm) {
       target.parentElement.style.backgroundColor = "#fff";
     }
   } else if (validator == 'invalid') {
-    target.style.backgroundColor = "#e9af8b";
+    target.style.backgroundColor = lightOrange;
     if (isForm) {
       target.classList.add('empty')
-      target.parentElement.style.backgroundColor = "#e9af8b";
+      target.parentElement.style.backgroundColor = lightOrange;
     }
   }
 }
@@ -1012,13 +1038,15 @@ function onLoginButton() {
   else {
     btnLogin.innerText = 'Login'
     login = false
+    localStorage.setItem("loginState", login)
   }
+  checkOrderAvailability()
 }
 
 function onLoginAcceptButton(event) {
   event.preventDefault();
-  const username = loginUsernameInput.value;
-  const password = loginPasswordInput.value;
+  const usernameVal = loginUsernameInput.value;
+  const passwordVal = loginPasswordInput.value;
   if (loginUsernameInput.value == "") {
     setColor(loginUsernameInput, 'invalid', true)
   }
@@ -1031,12 +1059,16 @@ function onLoginAcceptButton(event) {
   .then(data => {
     const users = data.users
     users.forEach(user => {
-      if (username == user.username && password == user.password) {
+      if (usernameVal == user.username && passwordVal == user.password) {
         btnLogin.innerText = 'Logout';
         login = true;
+        username = usernameVal
+        checkOrderAvailability()
         closeLogin()
+        localStorage.setItem("loginState", login)
+        localStorage.setItem('user', usernameVal)
       }
-      else if (username != '' && password != '') {
+      else if (usernameVal != '' && passwordVal != '') {
         loginErrorText.style.display = 'block'
       }
     })
@@ -1054,16 +1086,43 @@ function onEmptyValue(event) {
 }
 
 function onOrderButton() {
-  let originSet = checkIfValueSet(origin, searchFieldOrigin)
-  let destinationSet = checkIfValueSet(destination, searchFieldDestination)
-  let flightDateSet = checkIfValueSet(flightDate, searchFieldDate)
-  if (originSet && destinationSet && flightDateSet) {
-    closeOptions()
-    accepted = true
-    if (login == false) {
-      wrapperLogin.style.display = 'block'
-      searchPannelVisibility();
-    }
+  wrapperOptions.style.display = 'none';
+  wrapperSearch.style.display = 'none';
+  airplaneSection.style.display = 'none';
+  wrapperSumup.style.display = 'block';
+  sumupId.innerText = '000';
+  sumupOrigin.innerText = origin;
+  sumupDestination.innerText = destination;
+  sumupDate.innerText = flightDate;
+  sumupPassengers.innerText = passengersDataField.innerText
+  // sumupPassengers.innerText = `${adults} adults, ${children} chi, ${infants} I`;
+  sumupSeats.innerText = 'xxx';
+  sumupPrice.innerText = totalPrice + '$';
+  document.addEventListener('click', onOrderClose)
+  return false
+}
+
+function onOrderClose(event) {
+  if (event.target.closest('.btn.sumup') || event.target.closest('.btn.login')) {
+    // if (event.target.closest('.btn.login')) {
+    //   onLoginButton();
+    // }
+    sessionStorage.clear()
+    location.reload();
+    document.removeEventListener('click', onOrderClose);
+   }
+}
+
+function checkOrderAvailability() {
+  let originSet = checkIfValueSet(origin)
+  let destinationSet = checkIfValueSet(destination)
+  let flightDateSet = checkIfValueSet(flightDate)
+  let seatsSet = (selectedSeats.length == adults + children)
+  if (originSet && destinationSet && flightDateSet && seatsSet && login) {
+    btnOrder.disabled = false
+  }
+  else {
+    btnOrder.disabled = true
   }
 }
 
@@ -1073,13 +1132,117 @@ function onSeatsButton() {
   airplaneSection.style.display = 'block'
 }
 
-function checkIfValueSet(item, itemElement) {
+function checkIfValueSet(item) {
   if (item == undefined) {
-    setColor(itemElement, 'invalid', false);
     return false
   } else {
     return true
   };
+}
+
+function onSeat(e) {
+  if (!e.target.classList.contains('selected')) {
+    if (selectedSeats.length < adults + children) {
+      e.target.classList.add('selected')
+      e.target.style.fill = darkBlue
+      selectedSeats.push(e.target)
+    }
+  }
+  else {
+    e.target.style.fill = lightBlue
+    e.target.classList.remove('selected')
+    selectedSeats.forEach((seat, index) => {
+      if (seat.parentElement.id == e.target.parentElement.id) {
+        selectedSeats.splice(index, 1)
+      }
+    })
+  }
+  const selectedSeatsParentId = selectedSeats.map(seat => seat.parentElement.id)
+  sessionStorage.setItem('selectedSeatsParentId', JSON.stringify(selectedSeatsParentId))
+  checkOrderAvailability()
+}
+
+function setTotalPrice() {
+  totalPrice = Math.round(ticketPrice * (adults + 0.8 * children))
+  totalPriceElement.textContent = totalPrice
+}
+
+
+function setInitials() {
+  let savedLoginState = localStorage.getItem('loginState')
+  if (savedLoginState == 'true') {
+    let savedUser = localStorage.getItem('user')
+    if (savedUser) {
+      fetch(`https://gist.githubusercontent.com/MalgorzataKowalik/039b073fd0fa4da4e19aeecd4f09e5b5/raw/4a95f8643267a967a4402f4887a17459a9939c13/passwords.json`)
+      .then(res => res.json())
+      .then(data => {
+        const users = data.users;
+        users.forEach(user => {
+          if (savedUser == user.username) {
+            btnLogin.innerText = 'Logout';
+            login = true;
+            username = savedUser;
+            checkOrderAvailability()
+          }
+        })
+      })
+    };
+  }
+  let savedOrigin = sessionStorage.getItem('origin');
+  if (savedOrigin != null) {
+    origin = savedOrigin;
+    if (destination) setTotalPrice();
+    originDataField.innerText = origin;
+  }
+  let savedDestination = sessionStorage.getItem('destination');
+  if (savedDestination != null) {
+    destination = savedDestination;
+    let cityElement = document.querySelector(`[data-city='${savedDestination}']`);
+    ticketPrice = Number(cityElement.dataset.price);
+    if (origin) setTotalPrice();
+    destinationDataField.innerText = destination;
+  }
+  let savedFlightDate = sessionStorage.getItem('flightDate');
+  if (savedFlightDate != null) {
+    flightDate = savedFlightDate
+    dateDataField.innerText = flightDate
+  }
+  let savedFlightDateDiv = JSON.parse(sessionStorage.getItem('flightDateDiv'));
+  if (savedFlightDateDiv != null) {
+    date.setMonth(savedFlightDateDiv.month);
+    renderCalendar();
+    let flightDateDiv= document.querySelector(`[data-day='${savedFlightDateDiv.day}']`);
+    flightDateDiv.classList.add('chosen')
+  }
+  let savedPassengersText = sessionStorage.getItem('passengersText');
+  if (savedPassengersText != null) {
+    passengersDataField.innerText = savedPassengersText
+  }
+  let savedPassengers = JSON.parse(sessionStorage.getItem('passengers'));
+  if (savedPassengers != null) {
+    adults = savedPassengers.adults;
+    children = savedPassengers.children;
+    infants = savedPassengers.infants;
+    let adultsElement = document.querySelector('.passenger-amount.adults');
+    let childrenElement = document.querySelector('.passenger-amount.children');
+    let infantsElement = document.querySelector('.passenger-amount.infants');
+    adultsElement.innerText = adults
+    childrenElement.innerText = children
+    infantsElement.innerText = infants
+  }
+  if (origin && destination) setTotalPrice()
+  let savedSelectedSeatsParentId = JSON.parse(sessionStorage.getItem('selectedSeatsParentId'));
+  if (savedSelectedSeatsParentId != null) {
+    if (savedSelectedSeatsParentId.length <= adults + children) {
+      savedSelectedSeatsParentId.forEach(parentId => {
+        let seat = document.querySelector(`#${parentId}>rect`)
+        seat.classList.add('selected');
+        seat.style.fill = darkBlue
+        selectedSeats.push(seat)
+      })
+    }
+  }
+  checkOrderAvailability()
 }
 
 document.addEventListener('click', onWrapperClose)
@@ -1097,6 +1260,7 @@ loginUsernameInput.addEventListener('input', onEmptyValue)
 loginPasswordInput.addEventListener('input', onEmptyValue)
 btnOrder.addEventListener('click', onOrderButton)
 btnSeats.addEventListener('click', onSeatsButton)
+availableSeats.forEach(seat => seat.addEventListener('click', onSeat))
 
 prevMonthArrow.addEventListener("click", () => {
   date.setMonth(date.getMonth() - 1);
@@ -1108,6 +1272,8 @@ nextMonthArrow.addEventListener('click', () => {
 });
 
 renderCalendar()
+setInitials()
+
 
 })();
 

@@ -100,12 +100,13 @@ nav {
   font-weight: normal;
 }
 
-/* .price-value {
-  font-weight: bold;
-} */
-
 #buttons-wrapper {
-  margin: 14px auto 0;
+  margin: 0 auto ;
+  text-align: center;
+}
+
+#buttons-wrapper>button {
+  margin-bottom: 5px;
 }
 
 .btn.order {
@@ -319,6 +320,31 @@ nav {
   display: none;
 }
 
+.sumup-pannel {
+  z-index: 10;
+  font-size: 1.7rem;
+  display: none;
+}
+
+.sumup.pannel-field {
+  padding: 10px 4vw;
+  display: flex;
+  flex-direction: column;
+}
+
+h3.sumup {
+  margin: 6px 0;
+}
+
+p.sumup {
+  margin: 3px 0;
+}
+
+.btn.sumup {
+  margin: 14px auto 0;
+  align-self: center;
+}
+
 .airplane {
   width: 100%;
   position: absolute;
@@ -419,6 +445,15 @@ input.empty:-webkit-autofill {
 
   .login-pannel {
     left: 68vw;
+  }
+
+  .sumup-pannel {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .sumup.pannel-field {
+    padding: 10px 1.8vw;
   }
 
   .airplane {

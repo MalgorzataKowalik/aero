@@ -15,7 +15,7 @@
 />
 </head>
 <body>
-  <!-- <div class="background-image"></div> -->
+
   <nav>
     <div class="logo">
       <picture>
@@ -62,9 +62,9 @@
       </div>
       <div class="options pannel-field destination">
         <p class="options field-title destination">Available destinations:</p>
-        <p class="option data warsaw destination" data-price="100">Warsaw</p>
-        <p class="option data paris destination" data-price="200">Paris</p>
-        <p class="option data new-york destination" data-price="500">New York</p>
+        <p class="option data destination" data-price="100" data-city="Warsaw">Warsaw</p>
+        <p class="option data destination" data-price="200" data-city="Paris">Paris</p>
+        <p class="option data destination" data-price="500" data-city="New York">New York</p>
       </div>
       <div class="options date calendar">
           <div class="month">
@@ -105,8 +105,6 @@
         </div>
       </div>
     </section>
-    <section class="wrapper weather-pannel hover-pointer">
-    </section>
     <section class="wrapper login-pannel">
       <div class="btn close close-login hover-pointer">
         <img class="close-img" src="./images/close.png"/>
@@ -125,7 +123,19 @@
 Please try again!</p>
       </form>
     </section>
-        <section class="wrapper weather-pannel hover-pointer">
+    <section class="wrapper sumup-pannel">
+      <div class="sumup pannel-field">
+        <h3 class="sumup">Order id: <span id="sumup-id"></span></h3>
+        <p class="sumup">Origin: <span id="sumup-origin"></span></p>
+        <p class="sumup">Destination: <span id="sumup-destination"></span></p>
+        <p class="sumup">Date: <span id="sumup-date"></span></p>
+        <p class="sumup">Passengers: <span id="sumup-passengers"></span></p>
+        <p class="sumup">Seats: <span id="sumup-seats"></span></p>
+        <h3 class="sumup">Total price: <span id="sumup-price"></span></h3>
+        <button class="btn sumup hover-pointer">Reload</button>
+      </div>
+    </section>
+    <section class="wrapper weather-pannel">
     </section>
     <section class="airplane">
       <div class="btn close close-seats hover-pointer">

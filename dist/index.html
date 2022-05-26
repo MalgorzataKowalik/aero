@@ -15,7 +15,7 @@
 />
 <script defer src="bundle.js"></script></head>
 <body>
-  <!-- <div class="background-image"></div> -->
+
   <nav>
     <div class="logo">
       <picture>
@@ -46,6 +46,7 @@
         <p class="passengers field-title">Passengers</p>
         <p class="passengers data">1 Adult</p>
       </div>
+      <h3 class="price">total price: <span>0</span>$</h3>
       <div id="buttons-wrapper">
         <button class="btn seats hover-pointer">Seats</button>
         <button class="btn order hover-pointer" disabled>Order</button>
@@ -61,9 +62,9 @@
       </div>
       <div class="options pannel-field destination">
         <p class="options field-title destination">Available destinations:</p>
-        <p class="option data warsaw destination">Warsaw</p>
-        <p class="option data paris destination">Paris</p>
-        <p class="option data new-york destination">New York</p>
+        <p class="option data destination" data-price="100" data-city="Warsaw">Warsaw</p>
+        <p class="option data destination" data-price="200" data-city="Paris">Paris</p>
+        <p class="option data destination" data-price="500" data-city="New York">New York</p>
       </div>
       <div class="options date calendar">
           <div class="month">
@@ -104,8 +105,6 @@
         </div>
       </div>
     </section>
-    <section class="wrapper weather-pannel hover-pointer">
-    </section>
     <section class="wrapper login-pannel">
       <div class="btn close close-login hover-pointer">
         <img class="close-img" src="./images/close.png"/>
@@ -124,7 +123,19 @@
 Please try again!</p>
       </form>
     </section>
-        <section class="wrapper weather-pannel hover-pointer">
+    <section class="wrapper sumup-pannel">
+      <div class="sumup pannel-field">
+        <h3 class="sumup">Order id: <span id="sumup-id"></span></h3>
+        <p class="sumup">Origin: <span id="sumup-origin"></span></p>
+        <p class="sumup">Destination: <span id="sumup-destination"></span></p>
+        <p class="sumup">Date: <span id="sumup-date"></span></p>
+        <p class="sumup">Passengers: <span id="sumup-passengers"></span></p>
+        <p class="sumup">Seats: <span id="sumup-seats"></span></p>
+        <h3 class="sumup">Total price: <span id="sumup-price"></span></h3>
+        <button class="btn sumup hover-pointer">Reload</button>
+      </div>
+    </section>
+    <section class="wrapper weather-pannel">
     </section>
     <section class="airplane">
       <div class="btn close close-seats hover-pointer">
@@ -609,7 +620,7 @@ Please try again!</p>
           <rect class="seat" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill: rgb(67,169,199); fill-rule: evenodd; opacity: 1;" x="-6.472" y="-6.97" rx="1.792" ry="1.792" width="12.944" height="13.94"/>
         </g>
         <g transform="matrix(0 -1 1 0 158.767 -47.815)" id="F23">
-          <rect class="seat" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill: rgb(67,169,199); fill-rule: evenodd; opacity: 1;" x="-6.472" y="-6.97" rx="1.792" ry="1.792" width="12.944" height="13.94"/>
+          <rect class="seat" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill: rgb(67, 169, 199); fill-rule: evenodd; opacity: 1;" x="-6.472" y="-6.97" rx="1.792" ry="1.792" width="12.944" height="13.94"/>
         </g>
             <g transform="matrix(0 -1 1 0 -244.986 26.096)" id="381083">
         <rect style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; is-custom-font: none; font-file-url: none; fill: rgb(202, 118, 65); fill-rule: evenodd; opacity: 1;" x="-6.472" y="-6.97" rx="1.792" ry="1.792" width="12.944" height="13.94"/>
