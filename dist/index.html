@@ -58,21 +58,18 @@
       </div>
       <div class="options pannel-field origin">
         <p class="options field-title origin">Available origins:</p>
-        <p class="option data wroclaw origin">Wrocław</p>
+        <p class="option data wroclaw origin" data-city="Wrocław" data-lat="51.10166626" data-long="16.884829794">Wrocław</p>
       </div>
       <div class="options pannel-field destination">
         <p class="options field-title destination">Available destinations:</p>
-        <p class="option data destination" data-price="100" data-city="Warsaw">Warsaw</p>
-        <p class="option data destination" data-price="200" data-city="Paris">Paris</p>
-        <p class="option data destination" data-price="500" data-city="New York">New York</p>
+        <p class="option data destination" data-price="100" data-city="Warsaw" data-lat="52.159499362" data-long="20.966996132">Warsaw</p>
+        <p class="option data destination" data-price="200" data-city="Paris" data-lat="49.0083899664" data-long="2.53844117956">Paris</p>
+        <p class="option data destination" data-price="500" data-city="New York" data-lat="40.660445" data-long="-73.830316">New York</p>
       </div>
       <div class="options date calendar">
           <div class="month">
             <i class="fas fa-angle-left prev"></i>
-            <!-- <div class="date"> -->
               <h1></h1>
-              <!-- <p></p> -->
-            <!-- </div> -->
             <i class="fas fa-angle-right next"></i>
           </div>
           <div class="weekdays"> 
@@ -136,6 +133,12 @@ Please try again!</p>
       </div>
     </section>
     <section class="wrapper weather-pannel">
+        <div class="weather origin">
+          <p></p><img src="http://openweathermap.org/img/wn/01n@2x.png"/>
+        </div>
+        <div class="weather destination">
+          <p></p><img src="http://openweathermap.org/img/wn/01n@2x.png"/>
+        </div>
     </section>
     <section class="airplane">
       <div class="btn close close-seats hover-pointer">

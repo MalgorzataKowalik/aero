@@ -291,6 +291,7 @@ nav {
 .weather-pannel {
   top: 410px;
   height: auto;
+  padding: 10px 20px;
   display: none;
 }
 
@@ -457,8 +458,8 @@ input.empty:-webkit-autofill {
     left: 20.5vw;
   }
 
-  .weather-pannel p {
-    padding: 0 1.8vw;
+  .weather-pannel div {
+    padding: 0 1.2vw;
   }
 
   .login-pannel {

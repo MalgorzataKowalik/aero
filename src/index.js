@@ -126,6 +126,12 @@ function onOptionOrigin(event) {
   if (destination) setTotalPrice()
   originDataField.innerText = origin
   const params = {"lat": event.target.dataset.lat, "long": event.target.dataset.long}
+  sessionStorage.setItem('originParams', JSON.stringify(params))
+  showOriginWeather(params)
+  closeOptions()
+}
+
+function showOriginWeather(params) {
   const weather = fetchWeather(params)
   weather.then(obj => {
     weatherOriginP.innerText = `${origin} ${Math.round(obj.temperature)}${String.fromCharCode(176)}C`
@@ -133,7 +139,6 @@ function onOptionOrigin(event) {
   })
   wrapperWeather.style.display = 'block'
   weatherOriginDiv.style.display = 'flex'
-  closeOptions()
 }
 
 function onOptionDestination(event) {
@@ -143,6 +148,12 @@ function onOptionDestination(event) {
   if (origin) setTotalPrice()
   destinationDataField.innerText = destination
   const params = {"lat": event.target.dataset.lat, "long": event.target.dataset.long}
+  sessionStorage.setItem('destinationParams', JSON.stringify(params))
+  showDestinationWeather(params)
+  closeOptions()
+}
+
+function showDestinationWeather(params) {
   const weather = fetchWeather(params)
   weather.then(obj => {
     weatherDestinationP.innerText = `${destination} ${Math.round(obj.temperature)}${String.fromCharCode(176)}C`
@@ -150,7 +161,6 @@ function onOptionDestination(event) {
   })
   wrapperWeather.style.display = 'block'
   weatherDestinationDiv.style.display = 'flex'
-  closeOptions()
 }
 
 function renderCalendar() {
@@ -196,8 +206,6 @@ function renderCalendar() {
   ];
 
   document.querySelector(".date h1").innerHTML = months[date.getMonth()];
-
-  // document.querySelector(".date p").innerHTML = new Date().toDateString();
 
   let days = "";
 
@@ -420,6 +428,7 @@ function onOrderButton() {
   wrapperOptions.style.display = 'none';
   wrapperSearch.style.display = 'none';
   airplaneSection.style.display = 'none';
+  wrapperWeather.style.display = 'none'
   wrapperSumup.style.display = 'block';
   if (flightId == '') {
     flightId = (Math.round(Math.random() * 100000)).toString()
@@ -541,6 +550,8 @@ function setInitials() {
     origin = savedOrigin;
     if (destination) setTotalPrice();
     originDataField.innerText = origin;
+    let savedOriginParams = JSON.parse(sessionStorage.getItem('originParams'))
+    showOriginWeather(savedOriginParams)
   }
   let savedDestination = sessionStorage.getItem('destination');
   if (savedDestination != null) {
@@ -549,6 +560,8 @@ function setInitials() {
     ticketPrice = Number(cityElement.dataset.price);
     if (origin) setTotalPrice();
     destinationDataField.innerText = destination;
+    let savedDestinationParams = JSON.parse(sessionStorage.getItem('destinationParams'))
+    showDestinationWeather(savedDestinationParams)
   }
   let savedFlightDate = sessionStorage.getItem('flightDate');
   if (savedFlightDate != null) {
