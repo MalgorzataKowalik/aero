@@ -8,7 +8,7 @@ const lightBlue = '#43a9c7'
 
 const wrapperSearch = document.querySelector('.search-pannel');
 const wrapperOptions = document.querySelector('.options-pannel');
-const wrapperWeather = document.querySelector('.wrapper.weather');
+const wrapperWeather = document.querySelector('.weather-pannel');
 const wrapperLogin = document.querySelector('.login-pannel');
 const wrapperSumup = document.querySelector('.sumup-pannel');
 
@@ -43,6 +43,13 @@ const loginUsernameDiv = document.querySelector(".form-control.username");
 const loginPasswordInput = document.getElementById('password');
 const loginPasswordDiv = document.querySelector(".form-control.password");
 const loginErrorText = document.querySelector(".login-error-text");
+
+const weatherOriginDiv = document.querySelector('.weather.origin');
+const weatherOriginP = document.querySelector('.weather.origin>p');
+const weatherOriginImg = document.querySelector('.weather.origin>img');
+const weatherDestinationDiv = document.querySelector('.weather.destination');
+const weatherDestinationP = document.querySelector('.weather.destination>p');
+const weatherDestinationImg = document.querySelector('.weather.destination>img');
 
 const airplaneSection = document.querySelector(".airplane");
 const availableSeats = [...document.querySelectorAll('.seat')];
@@ -118,6 +125,14 @@ function onOptionOrigin(event) {
   sessionStorage.setItem('origin', origin)
   if (destination) setTotalPrice()
   originDataField.innerText = origin
+  const params = {"lat": event.target.dataset.lat, "long": event.target.dataset.long}
+  const weather = fetchWeather(params)
+  weather.then(obj => {
+    weatherOriginP.innerText = `${origin} ${Math.round(obj.temperature)}${String.fromCharCode(176)}C`
+    weatherOriginImg.src = `http://openweathermap.org/img/wn/${obj.icon}@2x.png`
+  })
+  wrapperWeather.style.display = 'block'
+  weatherOriginDiv.style.display = 'flex'
   closeOptions()
 }
 
@@ -127,6 +142,14 @@ function onOptionDestination(event) {
   ticketPrice = Number(event.target.dataset.price)
   if (origin) setTotalPrice()
   destinationDataField.innerText = destination
+  const params = {"lat": event.target.dataset.lat, "long": event.target.dataset.long}
+  const weather = fetchWeather(params)
+  weather.then(obj => {
+    weatherDestinationP.innerText = `${destination} ${Math.round(obj.temperature)}${String.fromCharCode(176)}C`
+    weatherDestinationImg.src = `http://openweathermap.org/img/wn/${obj.icon}@2x.png`
+  })
+  wrapperWeather.style.display = 'block'
+  weatherDestinationDiv.style.display = 'flex'
   closeOptions()
 }
 
@@ -477,6 +500,21 @@ function setTotalPrice() {
   totalPriceElement.textContent = totalPrice
 }
 
+function fetchWeather(params) {
+  let weather
+  return fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${params.lat}&lon=${params.long}&appid=207177da157001d0d25c027d33988ec4&units=metric`)
+        .then((response) => response.json())
+        .then((data) => {
+          const weather = {
+            "name": data.name, 
+            "temperature": data.main.temp, 
+            "description": data.weather[0].description,
+            "icon": data.weather[0].icon
+          };
+          return weather
+        })
+  // return weather
+}
 
 function setInitials() {
   let savedLoginState = localStorage.getItem('loginState')

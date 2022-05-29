@@ -289,8 +289,26 @@ nav {
 }
 
 .weather-pannel {
-  height: 300px;
+  top: 410px;
+  height: auto;
   display: none;
+}
+
+.weather-pannel div {
+  padding: 0 4vw;
+  font-size: 1.7rem;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.weather-pannel div.origin {
+  margin-bottom: 10px;
+}
+
+.weather-pannel img {
+  height: 40px;
+  width: 40px;
 }
 
 .login-pannel {
@@ -439,9 +457,9 @@ input.empty:-webkit-autofill {
     left: 20.5vw;
   }
 
-  /* .weather-pannel {
-    left: 0;
-  } */
+  .weather-pannel p {
+    padding: 0 1.8vw;
+  }
 
   .login-pannel {
     left: 68vw;
