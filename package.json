@@ -7,13 +7,15 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --mode=none",
     "start:dev": "webpack-dev-server --mode=development",
-    "build:dev": "webpack --mode=development"
+    "build:dev": "webpack --mode=development",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "css-loader": "^6.5.1",
+    "gh-pages": "^4.0.0",
     "html-webpack-plugin": "^5.5.0",
     "style-loader": "^3.3.1",
     "webpack": "^5.66.0",
