@@ -757,6 +757,7 @@ const date = new Date();
 function searchPannelVisibility() {
   if (window.innerWidth <= 800) {
     wrapperSearch.style.display = 'none'
+    wrapperWeather.style.display = 'none'
   }
 }
 function onOption() {
@@ -1008,6 +1009,7 @@ function closeOptions() {
 function closeSeats() {
   airplaneSection.style.display = 'none';
   wrapperSearch.style.display = 'grid'
+  wrapperWeather.style.display = 'block'
 }
 
 function setColor(target, validator, isForm) {
